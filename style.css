@@ -1,0 +1,436 @@
+html, body{
+    font-size: 20px;
+    font-family: arial, helvetica;
+    overflow-x: hidden;
+}
+
+/* tampilan desktop */
+
+/* navbar */
+.navbar{
+    background-color: white;
+}
+.navbar-brand img{
+    width: 260px;
+    margin-left: 1rem;
+
+}
+
+.navbar-nav{
+    padding-right: 5rem;
+    font-size: 18px;
+    font-family: arial,Arial, Helvetica, sans-serif;
+}
+.navbar-nav a{
+    color: rgb(73, 73, 64);
+    font-weight:500;
+
+}
+
+.navbar-nav a:hover{
+  color: rgb(9, 36, 242);
+}
+
+.nav-link.active {
+  border-bottom: 2px solid blue;
+}
+
+
+/* akhir navbar */
+
+/* jumbotron */
+.jumbotron{
+    padding-top: 10rem;
+    min-height:500px;
+    background-image: url("img/bg-jumbotron/bg2.png");
+    background-size:cover;
+    background-attachment:fixed;
+    background-position: 0px -4rem;
+    color: white;
+    padding-left: 3rem;
+}
+.jumbotron h2{
+  font-size: 28px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+
+}
+.jumbotron h1{
+    font-weight: bold;
+    font-size: 80px;
+    font-family:arial, helvetica;
+}
+.jumbotron p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4b3636;
+    font-weight: 600;
+}
+
+.media_mandiri{
+    color:rgb(12, 22, 139);
+}
+.citra{
+    color: rgb(198, 8, 8);
+}
+/* akhir jumbotron */
+
+
+
+/* tentang */
+#tentang .container{
+    min-height: 600px;
+    padding-top: 2rem;
+}
+
+#tentang .container h2{
+  font-weight: bold;
+  
+  
+}
+.tentang p{
+  text-align: justify;
+  padding-top: 1.5rem;
+}
+.tentang h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.tentang h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+ .tentang h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #1977cc;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.tentang h3{
+  font-weight: bold;
+}
+
+
+/* tentang */
+
+/* kursus */
+#kursus .container{
+  min-height: 110rem;
+  padding-top: 6rem;
+}
+
+#kursus .container h2{
+  font-weight: bold;
+}
+#kursus h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#kursus h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+ #kursus h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #1977cc;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+
+#kursus .card{
+  height: 580px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px #5e5c5c;
+  overflow: hidden;
+}
+
+#kursus .card p{
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  
+}
+
+
+#kursus .btn{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+}
+
+#kursus .btn:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(17, 190, 127);
+  
+}
+.card_1 .btn{
+    background-color: rgb(73, 93, 185);
+    color: white;
+    font-weight: 500;
+
+}
+
+.card_2 .btn{
+    background-color: rgb(15, 126, 72);
+    color: white;
+    font-weight: 500;
+}
+.card_3 .btn{
+    background-color: rgb(209, 86, 33);
+    color: white;
+    font-weight: 500;
+}
+.card_4 .btn{
+    background-color: rgb(209, 33, 112);
+    color: white;
+    font-weight: 500;
+}
+
+
+#kursus .card.card_4{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 400px;
+}
+
+#kursus .card.card_4 .card-header{
+  background-color:rgb(205, 87, 87);
+  color: rgb(0, 0, 0);
+}
+
+#kursus .card.card_4 .card-body{
+  background-image: url("img/program_kursus/bg_card4.jpg");
+  background-size: cover;
+}
+
+
+/* kursus */
+
+/* testimoni */
+
+#testimoni{
+  min-height: 500px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .15);
+  background-image: url("img/testimoni/bg3.png");
+  background-size: cover;
+  background-attachment:fixed;
+  backdrop-filter: blur(5px);
+}
+
+#testimoni .container h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#testimoni .container h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+ #testimoni .container h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #1977cc;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+
+
+/* style testimoni carousel */
+#testimoni .testimoni-img{
+  margin:0 1em 0 1em;
+  border-radius:100%;
+  width:150px;
+}
+
+#testimoni .carousel-item{
+  transition: all 0.8s ease-in-out;
+}
+#testimoni .carousel-item h4{
+  font-size: 22px;
+  line-height: 1.375em;
+  width: auto;
+  font-weight:500;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  vertical-align: middle;
+  margin: 70px 0;
+}
+#testimoni .carousel-item span{
+  font-weight: bold;
+}
+
+#testimoni .carousel-indicators button{
+  background-color: rgba(104, 59, 59, 0.653);
+  border-radius: 100%;
+  height: 12px;
+  width: 15px; 
+}
+#testimoni .carousel-indicators .active{
+  background-color: rgb(157, 48, 8);
+}
+
+/* akhir testimoni carousel */
+
+/* akhir testimoni */
+
+
+
+/* galeri */
+#galeri{
+  min-height: 200vh;
+  padding-top: 6rem;
+}
+
+#galeri .container h2{
+  font-weight: bold;
+  padding-bottom: 3rem;
+
+}
+
+#galeri .container h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#galeri .container h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+ #galeri .container h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #1977cc;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+
+
+
+#galeri .carousel-caption p{
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  background-color: rgba(12, 11, 11, 0.474);
+  border-radius: 5px 5px 5px 5px;
+}
+
+
+#galeri .card{
+  height: auto;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgb(126, 113, 113);
+  color: white;
+}
+
+
+#galeri .card-body{
+  background-image:url("img/galeri/bg_container.png");
+  background-size: cover;
+}
+#galeri .card-body h5{
+  font-size: 18px;
+}
+/* akhir galeri */
+
+/* kontak */
+#kontak{
+  min-height: 700px;  
+  padding-top: 40px;
+  background-color: hwb(0 4% 96% / 0.82);
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+#kontak hr{
+  border: 1px solid white;
+}
+
+
+#kontak .kontak_pribadi{
+  margin-left: 5rem;
+}
+#kontak .sosmed{
+  padding-top: 2rem;
+  margin-left: 5rem;
+}
+#kontak .alamat{
+  padding-top: 2rem;
+  margin-left: 5rem;
+}
+
+/* akhir kontak */
+
+
+
+/* akhir tampilan desktop */
+
+
+
+
+
+
+/* tampilan mobile */
+
+
+/* akhir tampilan mobile */
