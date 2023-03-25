@@ -63,3 +63,19 @@ var ctx = document.getElementById('myChart').getContext('2d');
 // akhir grapik peserta
 
 
+// Tampilkan tombol saat user scroll sejauh 20px dari atas halaman
+let backToTopButton = document.querySelector(".back-to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    backToTopButton.classList.add("show-back-to-top");
+  } else {
+    backToTopButton.classList.remove("show-back-to-top");
+  }
+});
+
+backToTopButton.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+
+

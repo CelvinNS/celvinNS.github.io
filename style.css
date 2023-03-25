@@ -189,11 +189,13 @@ html, body{
   right: 0;
   margin: auto;
   width: 50%;
+  transition: all 0.3s ease-in-out;
 }
 
 #kursus .btn:hover{
-  color: rgb(255, 255, 255);
-  background-color: rgb(17, 190, 127);
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  background-color: #f1c40f;
   
 }
 .card_1 .btn{
@@ -420,6 +422,51 @@ html, body{
 }
 
 /* akhir kontak */
+
+
+
+/* widget whatsapp */
+#btn-whatsapp{
+  position:fixed;
+  bottom: 70px;
+  right: 17px;
+  border: none;
+  border-width: 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: #25D366;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#btn-whatsapp img{
+  width: 40px;
+}
+
+/* akhir widget whatsapp */
+
+/* button back to top */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+.back-to-top img{
+  width: 34px;
+}
+
+.back-to-top:hover {
+  cursor: pointer;
+}
+
+.show-back-to-top {
+  display: block;
+}
+
+
+/* akhir button */
 
 
 
