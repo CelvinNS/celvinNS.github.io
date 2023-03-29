@@ -28,13 +28,32 @@ html, body{
 }
 
 .navbar-nav a:hover{
-  color: rgb(242, 215, 9);
+  color: rgb(9, 102, 242);
+  background-color: rgba(141, 130, 130, 0.115);
+  border-radius: 5px;
 }
 
 .nav-link.active {
-  color: yellow;
-  border-bottom: 2px solid rgb(214, 51, 51);
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(70, 57, 57, 0.464);
+  background: linear-gradient(45deg, #f1025e91, #1466d191, #0cbb6a8e, rgba(255, 234, 0, 0.557));
+  animation: background-color 5s ease infinite;
+  background-size: 400% 400%;
+  color: rgb(0, 0, 0);
 }
+@keyframes background-color {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 
 /* akhir navbar */
@@ -51,18 +70,23 @@ html, body{
     padding-left: 3rem;
 }
 .jumbotron h2{
-  font-size: 28px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
-
+  font-size: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 .jumbotron h1{
-    font-weight: bold;
-    font-size: 80px;
-    font-family:arial, helvetica;
+  padding:0px;
+  font-size: 80px;
+  font-family: 'Mitr', sans-serif;
+  margin-bottom: 0;
+ 
 }
+
+
+
 .jumbotron p{
-    font-size: 16px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     color: #4b3636;
     font-weight: 600;
@@ -74,6 +98,7 @@ html, body{
 .citra{
     color: rgb(198, 8, 8);
 }
+
 /* akhir jumbotron */
 
 
@@ -125,13 +150,33 @@ html, body{
 .tentang h3{
   font-weight: bold;
 }
+/* motto */
+.motto{
+  animation-name: text-color;
+  animation-duration: 3s; /* Durasi animasi selama 3 detik */
+  animation-iteration-count: infinite; /* Ulangi animasi sepanjang waktu */
+}
 
+/* Animasi warna */
+@keyframes text-color {
+  0% {
+    color: rgb(255, 0, 0); /* Warna merah */
+  }
+  50% {
+    color: rgb(40, 217, 31); /* Warna kuning */
+  }
+  100% {
+    color: rgb(0, 0, 255); /* Warna biru */
+  }
+}
 
-/* tentang */
+/* akhir motto */
+
+/* akhir tentang */
 
 /* kursus */
 #kursus .container{
-  min-height: 110rem;
+  min-height: 130rem;
   padding-top: 6rem;
 }
 
@@ -217,13 +262,30 @@ html, body{
     font-weight: 500;
 }
 .card_4 .btn{
-    background: linear-gradient(45deg, #db0f5d, #1466d1, #1b6a45, rgb(255, 72, 0));
-    animation: background-color 5s ease infinite;
-    background-size: 400% 400%;
+    background-color: #a80a6b;
     color: white;
     font-weight: 500;
 }
 
+#kursus h4{
+  font-family: arial,helvetica;
+}
+
+
+
+#kursus .card.card_4{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 400px;
+}
+
+#kursus .card.card_4 .card-header{
+  background: linear-gradient(45deg, #db0f5d, #1466d1, #1b6a45, rgb(255, 72, 0));
+  animation: background-color 5s ease infinite;
+  background-size: 400% 400%;
+  color: rgb(0, 0, 0);
+}
 @keyframes background-color {
   0% {
     background-position: 0% 50%;
@@ -236,26 +298,28 @@ html, body{
   }
 }
 
-
-#kursus .card.card_4{
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  height: 400px;
-}
-
-#kursus .card.card_4 .card-header{
-  background-color:rgb(205, 87, 87);
-  color: rgb(0, 0, 0);
-}
-
 #kursus .card.card_4 .card-body{
   background-image: url("img/program_kursus/bg_card4.jpg");
   background-size: cover;
 }
 
+/* table */
+table{
+  border-radius: 10px;
+  border: solid 1px rgb(58, 56, 56);
+  font-family: arial;
+  
+}
+thead tr{
+  background-color: #f09323;
+}
+tbody tr{ 
+background-color: #ffffff;
+}
+/* akhir table */
 
-/* kursus */
+
+/* akhir kursus */
 
 /* testimoni */
 
@@ -345,8 +409,6 @@ html, body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border: solid 1px rgb(143, 135, 135);
   background-color: rgba(9, 9, 9, 0.692);
-  filter:blur(8px)
-  opacity:0.8;
   border-radius: 6px;
   padding: 5px;
   transition: all 0.3s ease-in-out;
@@ -369,7 +431,7 @@ html, body{
 
 /* galeri */
 #galeri{
-  min-height: 200vh;
+  min-height: 90rem;
   padding-top: 6rem;
 }
 
@@ -423,31 +485,20 @@ html, body{
   height: auto;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 0 0 10px #3c3a3a;
-  animation: shadow-color 1s infinite alternate;
+  box-shadow: 0px 0px 6px #1b1a1a;
   color: white;
   transition: all 0.2s ease-in-out;
 }
-@keyframes shadow-color {
-  0% {
-    box-shadow: 0 0 10px #d65645;
-  }
-  50%{
-    box-shadow: 0 0 10px #293e68;
-  }
-  100% {
-    box-shadow: 0 0 10px #9fbb1e;
-  }
-}
+
 
 #galeri .card:hover{
   transform: scale(1.1);
-  box-shadow: 0px 0px 5px rgb(70, 69, 69);
+  box-shadow: 0px 0px 5px rgb(26, 25, 25);
 }
 
 
 #galeri .card-body{
-  background-image:url("img/galeri/bg_container.png");
+  background-image:url("img/galeri/bg_galeri.png");
   background-size: cover;
 }
 #galeri .card-body h5{
@@ -461,19 +512,19 @@ html, body{
   top: 25px;
   padding: 5px;
   left: 56.5rem;
-  border: solid 1px black;
+  border: solid 1px rgb(78, 73, 73);
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(101, 97, 97, 0.871);
   color: white;
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.712); 
+  background-color: rgba(16, 47, 101, 0.997); 
   transition: all 0.2s ease-in-out;
 }
 
 .btn-galeri:hover{
   transform: scale(1.1);
   color: white;
-  box-shadow: 0px 0px 5px rgb(50, 48, 48);
+  box-shadow: 0px 0px 9px rgb(50, 48, 48);
 }
 
 
