@@ -125,3 +125,7 @@ form.addEventListener('submit', (e) => {
   console.error(error);});
 
 });
+
+// -----------tampilan mobile-----------------//
+
+
