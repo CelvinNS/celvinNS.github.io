@@ -645,10 +645,10 @@ font-size: 12px;
 
 .navbar-toggler{
   border: none;
-  background-color: transparent;
+  background-color: transparenblac;
   cursor: pointer;
   position: absolute;
-  right: 0;
+  right: 20px;
 }
 
 
@@ -666,27 +666,27 @@ font-size: 12px;
 
 /* jumbotron */
 .jumbotron{
-  padding-top: 9rem;
-  min-height:200px;
+  padding-top: 13rem;
+  min-height:300px;
   color: white;
-  background: linear-gradient(45deg, #1d94f4a9, #3987ecbe, #86978f8e, rgba(223, 21, 21, 0.806));
+  background: linear-gradient(45deg, #0b5b9d, #0847ad9c, #02e37a, rgba(223, 21, 21, 0.882));
   animation: background-color 5s ease infinite;
   background-size: 400% 400%;
   color: rgb(0, 0, 0);
 }
 @keyframes background-color {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 40%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 50% 50%;
   }
   100% {
     background-position: 0% 70%;
   }
 }
 .jumbotron h2{
-font-size: 14px;
+font-size: 16px;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 font-weight: 600;
 margin-left: -10px;
@@ -694,7 +694,7 @@ margin-left: -10px;
 }
 .jumbotron h1{
 padding:0px;
-font-size: 28px;
+font-size: 32px;
 font-family: 'Mitr', sans-serif;
 margin-bottom: 0;
 margin-left: -10px;
@@ -702,7 +702,7 @@ margin-left: -10px;
 }
 
 .jumbotron p{
-  font-size: 5px;
+  font-size: 8px;
   font-family: Arial, Helvetica, sans-serif;
   color: #4b3636;
   font-weight: 600;
@@ -732,11 +732,15 @@ margin-left: -10px;
 
 /* kursus */
 #kursus .card{
-  width: 150px;
+  width: 250px;
   height: 350px;
   cursor: pointer;
   box-shadow: 0px 0px 10px #5e5c5c;
   overflow: hidden;
+}
+
+#kursus .kursus-card img{
+  height: 16rem;
 }
 
 #kursus .kursus-card{
@@ -795,14 +799,13 @@ margin-left: -10px;
 
 #testimoni .btn-testimoni{
   position: relative;
-  left: 220px;
+  left: 250px;
   bottom: -35px;
   font-size: 12px;
 }
 /* akhir testimoni  */
 
 /* galeri  */
-
 #galeri .galeri-card .card{
   margin-right: auto;
   margin-left: auto;
@@ -824,7 +827,7 @@ margin-left: -10px;
 
 #galeri .btn-galeri{
   position: relative;
-  left: 220px;
+  left: 245px;
   font-size: 12px;
 }
 
