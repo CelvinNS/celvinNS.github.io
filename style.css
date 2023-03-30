@@ -156,21 +156,70 @@ html, body{
 }
 /* motto */
 .motto{
-  animation-name: text-color;
-  animation-duration: 3s; /* Durasi animasi selama 3 detik */
-  animation-iteration-count: infinite; /* Ulangi animasi sepanjang waktu */
+  font-family: 'Mitr', sans-serif;
+  animation: glitch 10s infinite;
 }
 
-/* Animasi warna */
-@keyframes text-color {
+/* Animasi glitch atau rusak */
+@keyframes glitch{
   0% {
-    color: rgb(255, 0, 0); /* Warna merah */
+    transform: none;
+    clip-path: inset(0 100% 0 0);
+    filter: hue-rotate(0deg);
   }
-  50% {
-    color: rgb(40, 217, 31); /* Warna kuning */
+
+  5% {
+    transform: skew(-5deg);
+    clip-path: inset(0 70% 0 0);
+    filter: hue-rotate(360deg);
   }
+
+  10% {
+    transform: none;
+    clip-path: inset(0 100% 0 0);
+    filter: hue-rotate(0deg);
+  }
+
+  30% {
+    transform: skew(5deg);
+    clip-path: inset(0 50% 0 0);
+    filter: hue-rotate(180deg);
+  }
+
+  35% {
+    transform: none;
+    clip-path: inset(0 100% 0 0);
+    filter: hue-rotate(0deg);
+  }
+
+  55% {
+    transform: skew(-5deg);
+    clip-path: inset(0 30% 0 0);
+    filter: hue-rotate(90deg);
+  }
+
+  60% {
+    transform: none;
+    clip-path: inset(0 100% 0 0);
+    filter: hue-rotate(0deg);
+  }
+
+  80% {
+    transform: skew(5deg);
+    clip-path: inset(0 10% 0 0);
+    filter: hue-rotate(270deg);
+  }
+
+  85% {
+    transform: none;
+    clip-path: inset(0 100% 0 0);
+    filter: hue-rotate(0deg);
+  }
+
   100% {
-    color: rgb(0, 0, 255); /* Warna biru */
+    transform: skew(-5deg);
+    clip-path: inset(0 0 0 0);
+    filter: hue-rotate(360deg);
   }
 }
 
@@ -666,7 +715,7 @@ font-size: 12px;
 
 /* jumbotron */
 .jumbotron{
-  padding-top: 13rem;
+  padding-top: 12rem;
   min-height:300px;
   color: white;
   background: linear-gradient(45deg, #0b5b9d, #0847ad9c, #02e37a, rgba(223, 21, 21, 0.882));
@@ -740,7 +789,7 @@ margin-left: -10px;
 }
 
 #kursus .kursus-card img{
-  height: 16rem;
+  height: 18rem;
 }
 
 #kursus .kursus-card{
@@ -827,7 +876,7 @@ margin-left: -10px;
 
 #galeri .btn-galeri{
   position: relative;
-  left: 245px;
+  left: 240px;
   font-size: 12px;
 }
 
