@@ -126,6 +126,31 @@ form.addEventListener('submit', (e) => {
 
 });
 
+
+// navbar otomatis menyesuakan halaman yang sedang di tampilkan 
+window.addEventListener('scroll', function() {
+  let activeNav = '';
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  sections.forEach((section, index) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+      activeNav = navLinks[index];
+    }
+  });
+
+  navLinks.forEach((nav) => {
+    nav.classList.remove('active');
+  });
+
+  activeNav.classList.add('active');
+});
+
+
+
+
 // -----------tampilan mobile-----------------//
 
 
