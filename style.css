@@ -762,6 +762,10 @@ margin-left: -10px;
 
 /* tentang */
 
+#tentang{
+  min-height:140vh;
+}
+
 #tentang .visi, .misi{
   font-size: 10px;
   display:grid;
@@ -780,6 +784,10 @@ margin-left: -10px;
 
 
 /* kursus */
+#kursus{
+  min-height: 300vh;
+}
+
 #kursus .card{
   width: 250px;
   height: 350px;
