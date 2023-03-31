@@ -1,8 +1,9 @@
 html, body{
     font-size: 20px;
-    font-family: arial, helvetica;
-    overflow-x: hidden;
+    font-family:'Work Sans', sans-serif;
+    overflow-x: hidden;   
 }
+
 
 /* tampilan desktop */
 
@@ -118,11 +119,12 @@ html, body{
   
   
 }
-.tentang p{
+#tentang p{
+  font-family: 'work sans', sans-serif;
   text-align: justify;
   padding-top: 1.5rem;
 }
-.tentang h2 {
+#tentang h2 {
   font-weight: bold;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -267,7 +269,7 @@ html, body{
 
 
 #kursus .card{
-  height: 580px;
+  height: 595px;
   cursor: pointer;
   box-shadow: 0px 0px 10px #5e5c5c;
   overflow: hidden;
@@ -275,6 +277,7 @@ html, body{
 
 #kursus .card p{
   font-size: 16px;
+  font-family: 'work sans', sans-serif;
   text-overflow: ellipsis;
   overflow: hidden;
   
@@ -321,7 +324,7 @@ html, body{
 }
 
 #kursus h4{
-  font-family: arial,helvetica;
+  font-family: 'work sans', sans-serif;
 }
 
 
@@ -381,17 +384,20 @@ background-color: #ffffff;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2); 
   border-radius: 5px;
   background-color: rgba(255, 255, 255, .15);
-  background-image: url("img/testimoni/bg3.png");
+  background-image: url("img/testimoni/bg4.png");
   background-size: cover;
   background-attachment:fixed;
   backdrop-filter: blur(5px);
 }
 
+
 #testimoni .container h2 {
   font-weight: bold;
+  font-family: 'work sans', sans-serif;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: white;
 }
 
 #testimoni .container h2::before {
@@ -432,6 +438,7 @@ background-color: #ffffff;
   font-size: 22px;
   line-height: 1.375em;
   width: auto;
+  color: white;
   font-weight:500;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   vertical-align: middle;
@@ -448,7 +455,7 @@ background-color: #ffffff;
   width: 15px; 
 }
 #testimoni .carousel-indicators .active{
-  background-color: rgb(157, 48, 8);
+  background-color: rgb(17, 2, 2);
 }
 
 
@@ -484,14 +491,17 @@ background-color: #ffffff;
 
 /* galeri */
 #galeri{
-  min-height: 90rem;
+  min-height: 230vh;
   padding-top: 6rem;
 }
 
 #galeri .container h2{
   font-weight: bold;
   padding-bottom: 3rem;
+}
 
+#galeri p{
+  font-family: 'work sans', sans-serif;
 }
 
 #galeri .container h2 {
@@ -552,7 +562,9 @@ background-color: #ffffff;
 
 #galeri .card-body{
   background-image:url("img/galeri/bg_galeri.png");
-  background-size: cover;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment:scroll;
 }
 #galeri .card-body h5{
   font-size: 18px;
@@ -777,6 +789,10 @@ margin-left: -10px;
   margin-right: auto;
 }
 
+.visi p{
+  margin-top: -150px;
+}
+
 
 
 
@@ -785,12 +801,12 @@ margin-left: -10px;
 
 /* kursus */
 #kursus{
-  min-height: 250vh;
+  min-height: 300vh;
 }
 
 #kursus .card{
   width: 250px;
-  height: 350px;
+  height: 360px;
   cursor: pointer;
   box-shadow: 0px 0px 10px #5e5c5c;
   overflow: hidden;
