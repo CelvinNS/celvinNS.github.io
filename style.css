@@ -67,7 +67,7 @@ html, body{
 .jumbotron{
     padding-top: 10rem;
     min-height:500px;
-    background-image: url("img/bg-jumbotron/bg2.png");
+    background-image: url("img/bg-jumbotron/bg3.png");
     background-size:cover;
     background-attachment:fixed;
     background-position: 0px -4rem;
@@ -75,34 +75,34 @@ html, body{
     padding-left: 3rem;
 }
 .jumbotron h2{
-  font-size: 30px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  font-family:'work sans', sans-serif;
   font-weight: 600;
   margin-bottom: 0;
 }
 .jumbotron h1{
   padding:0px;
-  font-size: 80px;
+  font-size: 85px;
   font-family: 'Mitr', sans-serif;
   margin-bottom: 0;
- 
+  background: linear-gradient(to right, #2e35f6, #fc0303, #0634b3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-
 
 .jumbotron p{
-    font-size: 18px;
+    font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #4b3636;
-    font-weight: 600;
+    font-family: 'work sans', sans-serif;
+    font-weight: 300;
 }
 
-.media_mandiri{
+/* .media_mandiri{
     color:rgb(12, 22, 139);
 }
 .citra{
     color: rgb(198, 8, 8);
-}
+} */
 
 /* akhir jumbotron */
 
@@ -126,6 +126,7 @@ html, body{
 }
 
 #tentang ol li {
+  padding-top: 10px;
   font-family: 'work sans', sans-serif;
 }
 #tentang h2 {
@@ -565,11 +566,30 @@ background-color: #ffffff;
 
 
 #galeri .card-body{
-  background-image:url("img/galeri/bg_galeri.png");
+  /* background-image:url("img/galeri/bg_galeri2.png");
   background-size:cover;
   background-repeat: no-repeat;
-  background-attachment:scroll;
+  background-attachment:scroll; */
+  background: linear-gradient(45deg, #080808, #02387f, rgba(254, 4, 4, 0.844));
+  animation: background-color 5s ease infinite;
+  background-size: 400% 400%;
+  color: rgb(255, 255, 255);
 }
+@keyframes background-color {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+
+}
+
+
+
 #galeri .card-body h5{
   font-size: 18px;
 }
@@ -586,7 +606,7 @@ background-color: #ffffff;
   box-shadow: 0px 0px 5px rgba(101, 97, 97, 0.871);
   color: white;
   text-decoration: none;
-  background-color: rgba(16, 47, 101, 0.997); 
+  background-color: rgba(15, 95, 233, 0.997); 
   transition: all 0.2s ease-in-out;
 }
 
@@ -734,7 +754,7 @@ font-size: 12px;
   padding-top: 12rem;
   min-height:300px;
   color: white;
-  background: linear-gradient(45deg, #0b5b9d, #0847ad9c, #02e37a, rgba(223, 21, 21, 0.882));
+  background: linear-gradient(45deg, #ffffff, #3781f9,rgb(255, 6, 6));
   animation: background-color 5s ease infinite;
   background-size: 400% 400%;
   color: rgb(0, 0, 0);
@@ -747,7 +767,7 @@ font-size: 12px;
     background-position: 50% 50%;
   }
   100% {
-    background-position: 0% 70%;
+    background-position: 0% 50%;
   }
 }
 .jumbotron h2{
@@ -755,7 +775,7 @@ font-size: 16px;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 font-weight: 600;
 margin-left: -10px;
-
+color: white;
 }
 .jumbotron h1{
 padding:0px;
@@ -769,8 +789,8 @@ margin-left: -10px;
 .jumbotron p{
   font-size: 8px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #4b3636;
-  font-weight: 600;
+  color: #c7c7c7;
+  font-weight: 300;
   margin-left: -10px;
 }
 /* akhir jumbotron  */
