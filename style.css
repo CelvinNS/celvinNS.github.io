@@ -124,6 +124,10 @@ html, body{
   text-align: justify;
   padding-top: 1.5rem;
 }
+
+#tentang ol li {
+  font-family: 'work sans', sans-serif;
+}
 #tentang h2 {
   font-weight: bold;
   margin-bottom: 20px;
@@ -801,7 +805,7 @@ margin-left: -10px;
 
 /* kursus */
 #kursus{
-  min-height: 300vh;
+  min-height: 180rem;
 }
 
 #kursus .card{
