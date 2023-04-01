@@ -235,6 +235,12 @@ html, body{
 
 /* akhir tentang */
 
+
+
+
+/* --------------------------------------------------------- */
+
+
 /* kursus */
 #kursus .container{
   min-height: 130rem;
@@ -383,6 +389,10 @@ background-color: #ffffff;
 
 /* akhir kursus */
 
+/* ------------------------------------------------------------------------------*/
+
+
+
 /* testimoni */
 
 #testimoni{
@@ -492,6 +502,9 @@ background-color: #ffffff;
 /* akhir testimoni carousel */
 
 /* akhir testimoni */
+
+
+/* ------------------------------------------------------------------------------------ */
 
 
 
@@ -621,6 +634,8 @@ background-color: #ffffff;
 
 /* akhir galeri */
 
+/* ----------------------------------------------------------------------------- */
+
 /* kontak */
 #kontak{
   min-height: 700px;  
@@ -649,6 +664,8 @@ background-color: #ffffff;
 
 /* akhir kontak */
 
+
+/* ------------------------------------------------------------------------------ */
 
 
 /* widget whatsapp */
@@ -685,6 +702,8 @@ background-color: #ffffff;
 
 /* akhir widget whatsapp */
 
+/* --------------------------------------------------------------- */
+
 /* button back to top */
 .back-to-top {
   position: fixed;
@@ -707,19 +726,23 @@ background-color: #ffffff;
 
 /* akhir button */
 
+/* --------------------------------------------------------------- */
+
 
 
 /* akhir tampilan desktop */
 
 
 
-/* ---------------------------------------------------------------------------------------- */
+/* -----------------------------------------//----------------------------------------------- */
 
 
 /* tampilan mobile */
 
 @media only screen and (max-width: 768px){
   /* tampilan mobile */
+
+  /* ------------------------------------------------------------ */
 
 /* navbar */
 html, body{
@@ -747,6 +770,8 @@ font-size: 12px;
   padding: 5px;
 }
 /* akhir navbar */
+
+/* ----------------------------------------------------------------------------------- */
 
 /* jumbotron */
 .jumbotron{
@@ -794,6 +819,7 @@ margin-left: -10px;
 }
 /* akhir jumbotron  */
 
+/* -------------------------------------------------------------- */
 
 /* tentang */
 
@@ -818,8 +844,9 @@ margin-left: -10px;
 
 
 
-
 /* akhir tentang */
+
+/* ------------------------------------------------------------ */
 
 
 /* kursus */
@@ -874,6 +901,7 @@ margin-left: -10px;
 }
 /* akhir kursus */
 
+/* ------------------------------------------------------------------- */
 
 /* testimoni */
 #testimoni{
@@ -916,13 +944,14 @@ margin-left: -10px;
 }
 /* akhir testimoni  */
 
+/* ----------------------------------------------------------------- */
+
 /* galeri  */
 #galeri .galeri-card .card{
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
 }
-
 
 #galeri .card{
   width: 300px;
@@ -943,9 +972,9 @@ margin-left: -10px;
 }
 
 
-
 /* akhir galeri */
 
+/* ----------------------------------------------------------------- */
 
 
 /* kontak & footer*/
@@ -983,6 +1012,8 @@ margin-left: -10px;
 
 /* kontak & footer */
 
+/* --------------------------------------------------------------- */
+
 
 /* widged whatsapp & back to top */
 #btn-whatsapp{
@@ -1006,11 +1037,9 @@ margin-left: -10px;
 
 /* akhir widged whatsapp & back to top */
 
-
-
-
-
-
-
+/* ---------------------------------------------------------------- */
 }
+
 /* akhir tampilan mobile */
+
+/* ------------------------------------------//--------------------------------------------- */
