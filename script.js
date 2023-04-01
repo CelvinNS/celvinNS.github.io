@@ -128,19 +128,6 @@ form.addEventListener('submit', (e) => {
 
 
 
-// poto besar saat di klik
-const poto = document.querySelector('.poto');
-const gambarContainer = document.querySelector('.gambar-container');
-const close = document.querySelector('.close');
-
-poto.addEventListener('click', function() {
-  gambarContainer.style.display = 'block';
-});
-
-close.addEventListener('click', function() {
-  gambarContainer.style.display = 'none';
-});
-
 
 
 // -----------tampilan mobile-----------------//

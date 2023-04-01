@@ -501,6 +501,56 @@ background-color: #ffffff;
 
 /* akhir testimoni carousel */
 
+/* testimoni-page.html  */
+
+
+#tulis-testimoni{
+  left: 30%;
+  position: relative;
+  justify-content: center;
+}
+#tulis-testimoni label{
+  text-align: start;
+  font-size: 26px;
+  font-family: "work sans", sans-serif;
+  font-weight: 400;
+}
+
+#nama-testimoni{
+  border: solid 0.1px rgb(214, 200, 200);
+  border-radius: 5px;
+  width: 40%;
+}
+
+#textarea-testimoni{
+  border: solid 0.1px rgb(214, 200, 200);
+  border-radius: 5px;
+  width: 40%;
+}
+
+#tulis-testimoni .btn-kirim{
+  background-color: rgb(94, 94, 246);
+  position: relative;
+  left: 36.6%;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0 0 3px black;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+
+ #tulis-testimoni .btn-kirm:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 5px black ;
+ }
+
+
+/* akhir testimoni-page.html */
+
+
+
 /* akhir testimoni */
 
 
@@ -942,6 +992,41 @@ margin-left: -10px;
   bottom: -70px;
   font-size: 12px;
 }
+
+/* testimoni-page.html  */
+
+
+#tulis-testimoni{
+  left: 20%;
+  position: relative;
+  justify-content: center;
+}
+#tulis-testimoni label{
+  text-align: start;
+  font-size: 14px;
+  font-family: "work sans", sans-serif;
+  font-weight: 400;
+}
+
+#nama-testimoni{
+  border: solid 0.1px rgb(214, 200, 200);
+  border-radius: 5px;
+  width: 60%;
+}
+
+#textarea-testimoni{
+  border: solid 0.1px rgb(214, 200, 200);
+  border-radius: 5px;
+  width: 60%;
+}
+
+#tulis-testimoni .btn-kirim{
+  left: 50%;
+}
+
+/* akhir testimoni-page.html */
+
+
 /* akhir testimoni  */
 
 /* ----------------------------------------------------------------- */
