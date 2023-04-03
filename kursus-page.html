@@ -43,7 +43,7 @@
                   <a class="nav-link active" href="kursus-page.html">Kursus</a>
                   <a class="nav-link" href="testimoni-page.html">Testimoni</a>
                   <a class="nav-link" href="galeri-page.html">Galeri</a>
-                  <a class="nav-link" href="#kontak">Kontak</a>
+                  <a class="nav-link" href="index.html#kontak">Kontak</a>
                 </div>
               </div>
             </div>
@@ -182,189 +182,33 @@
 
 
 
-          <!-- kontak & footer -->
-    <section id="kontak">
-        <div class="container">
-          <div class="row pt-5 text-center">
-            <div class="col-md-12">
-              <h2 class="fw-bold">Kontak</h2>
-                <hr>
-            </div>
-          </div>
-
-          <!-- form kontak -->
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="text-center pb-4">Kirim Pesan</h3>
-
-              <!-- Pesan sukses -->
-              <div class="alert alert-warning alert-dismissible fade show d-none" role="alert">
-                <strong>Terima Kasih!</strong> Pesan anda sudah kami terima.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              </div>
-              <!-- akhir pesan sukses -->
-
-              <form
-              action="https://formspree.io/f/myyadaqw"
-              method="POST"
-              >
-                <div class="mb-3">
-                  <label for="Nama" class="form-label">Nama</label>
-                  <input type="Nama" name="Nama" class="form-control" id="Nama" placeholder="budi setiawan">
-                </div>
-                <div class="mb-3">
-                  <label for="Alamat" class="form-label">Alamat</label>
-                  <input type="alamat" name="Alamat" class="form-control" id="Alamat" placeholder="Barong Tongkok">
-                </div>
-                <div class="mb-3">
-                  <label for="Nohp" class="form-label">Nomor Handphone</label>
-                  <input type="nohp" name="Nohp" class="form-control" id="Nohp" placeholder="081250496560">
-                </div>
-                <div class="mb-3">
-                  <label for="Email" class="form-label">Email</label> 
-                  <input type="email" name="Email" class="form-control" id="Email" placeholder="budi@gmail.com">
-                </div>
-                <div class="mb-3">
-                  <label for="pesan" class="form-label">Pesan</label>
-                  <textarea class="form-control" name="pesan" id="pesan" placeholder="Tulis Pesan Anda disini..." rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-kirim">kirim</button>
-
-                <!-- button loading ketika dikirim -->
-                <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                  Loading...
-                </button>
-                <!-- akhir button loading -->
-              </form>
-
-            </div>
-
-
-                <!-- telp, Email, Alamat dan sosial media -->
-              <div class="col-md-6">
-                <h3 class="text-center pb-4">Hubungi Kami</h3>
-              
-                <div class="row kontak_pribadi">
-                  <label for="Kontak Pribadi" class="nama-label">Kontak Pribadi</label>
-
-                   <!-- email -->
-                   <div class="pt-3">
-                    <a href="mailto:celvinnetaniel@gmail.com?subject=Pesan%20untuk%20Anda&body=Halo%20saya%20ingin%20mengirim%20pesan%20ini%20kepada%20Anda"">
-                      <img src="img/kontak/email.svg" alt="wmail" width="24" height="24" style="display:inline-block; vertical-align:middle;">
-                      <span style="display:inline-block; vertical-align:middle;">celvinnetaniel@gmail.com</span>
-                    </a>
-                   
-                  </div>
-                  <!-- akhir email -->
-
-                  <!-- telp -->
-                  <div class="pt-2">
-                    <a href="tel:+6281250451536">
-                      <img src="img/kontak/call-center.svg" alt="Telepon" width="24" height="24" style="display:inline-block; vertical-align:middle;">
-                      <span style="display:inline-block; vertical-align:middle; color: rgb(224, 210, 210);">0812-5045-1536</span>
-                    </a>
-                    
-                  </div>
-                  <!-- akhir telp -->
-              
-
-                  <!-- whatsapp -->
-                  <div class="pt-2">
-                    <a href="https://wa.me/+6281250451536">
-                      <img src="img/kontak/whatsapp.svg" alt="whatsapp" width="24" height="24" style="display:inline-block; vertical-align:middle;">
-                      <span style="display:inline-block; vertical-align:middle; color: rgb(224, 210, 210)">0812-5045-1536</span>
-                    </a>
-                    
-                  </div>
-                  <!-- akhir whatsapp -->
-
-                </div>
-
-                <div class="row sosmed">
-                  <label for="Kontak Pribadi" class="nama-label">Sosial Media</label>
-
-                  <!-- facebook -->
-                  <div class="pt-2">
-                    <a href="https://www.facebook.com/jamal.udin.1806">
-                      <img src="img/kontak/facebook-logo-2019.svg" alt="facebook" width="24" height="24" style="display:inline-block; vertical-align:middle;">
-                      <span style="display:inline-block; vertical-align: middle; color: rgb(224, 210, 210)">Media Citra Mandiri</span>
-                  </div>
-
-                    </a>
-                    
-                  <!-- akhir facebook -->
-
-                  <!-- instagram -->
-                  <div>
-                    <a href="https://www.instagram.com/lpk.mcm_payang/">
-                      <img src="img/kontak/instagram.svg" alt="facebook" width="24" height="24" style="display:inline-block; vertical-align:middle;">
-                      <span style="display:inline-block; vertical-align: middle; color: rgb(224, 210, 210)">lpk_mcm</span>
-                    </a>
-                    
-                  </div>
-                  <!-- akhir instagram -->
-
-                </div>
-
-                <div class="row alamat">
-                  <label for="alamat" class="nama_label">Alamat</label>
-                  <!-- alamat -->
-                  <div>
-                    <a href="https://goo.gl/maps/8qbchXqsR2eGnB5C8">
-                      <img src="img/kontak/favorite-location.svg" alt="facebook" width="24" height="24" style="display:inline-block; vertical-align:middle;">
-                      <span style="display:inline-block; vertical-align: middle; color: rgb(224, 210, 210)">Jl. Trans Kalimantan, Payang, Kec. Muara Lawa</span> 
-                    </a>
-                    
-                  </div>
-
-                  <div class="pt-3">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d715.5387975896872!2d115.74841546651326!3d-0.49787192772165545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df781bdc7c44065%3A0x4ad3dc8930fd3e3a!2sPayang%2C%20Kec.%20Muara%20Lawa%2C%20Kabupaten%20Kutai%20Barat%2C%20Kalimantan%20Timur!5e0!3m2!1sid!2sid!4v1676527024216!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-                  <!-- akhir alamat -->
-                </div>
-                
-              
-              </div>
-              <!-- akhir Nohp, Email, Alamat dan sosial media -->
-
-
-
-          </div>
-          <!-- akhir form kontak -->
+        
 
 
 
           <!-- footer -->
-          <footer class=" mt-5 flex-wrap justify-content-between align-items-center py-3 border-top">
-            <div class="col-md-6b d-flex align-items-center footer">
-              <a href="/" class="me-2  text-muted text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-              </a>
-              <span class="text-muted">© 2023 Media Citra Mandiri. All rights reserved</span>
-            </div>
-          </footer>
+          <section id="kursus-footer" style="background-color: hwb(0 4% 96% / 0.82);">
+            <footer class=" mt-5 flex-wrap justify-content-between align-items-center py-3 border-top">
+              <div class="col-md-6b d-flex align-items-center footer">
+                <a href="/" class="me-2  text-muted text-decoration-none lh-1">
+                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <span class="text-muted">© 2023 Media Citra Mandiri. All rights reserved</span>
+              </div>
+            </footer>
+          </section>
+          
 
           <!-- akhir footer -->
           
-        </div>
-    </section>
-    <!-- akhir kontak & footer-->
+  
           
 
 
-    <!-- widget whatsapp -->
-    <button id="btn-whatsapp">
-      <a href="https://wa.me/+6281250451536"><img src="img/kontak/whatsapp.svg" alt=""> Hubungi Kami</a>
-    </button>
-    
-    <!-- akhir widget whatsapp -->
 
    <!-- button back to top -->
-   <a href="#" class="back-to-top"><img src="img/btn-back-to-top/arrow-up-circle-fill.svg" alt=""></a>
-
+   <a href="#" class="to-top"> <img src="img/btn-back-to-top/arrow-up-circle-fill.svg" alt=""></a>
    <!-- akhir button back to top -->
-
     
    
 

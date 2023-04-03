@@ -460,6 +460,7 @@ background-color: #ffffff;
   vertical-align: middle;
   margin: 70px 0;
 }
+
 #testimoni .carousel-item span{
   font-weight: bold;
 }
@@ -717,6 +718,8 @@ background-color: #ffffff;
 
 /* ------------------------------------------------------------------------------ */
 
+/* ------------------------------------------------------------------------------ */
+
 
 /* widget whatsapp */
 #btn-whatsapp{
@@ -755,24 +758,25 @@ background-color: #ffffff;
 /* --------------------------------------------------------------- */
 
 /* button back to top */
-.back-to-top {
+.to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  display: none;
+  display: none ;
+  z-index: 999;
 }
 
-.back-to-top img{
- width: 35px;
+.to-top img {
+  width: 35px;
+  transition: transform 0.3s;
 }
 
-.back-to-top:hover {
-  cursor: pointer;
+.to-top:hover img {
+  transform: rotate(360deg);
 }
 
-.show-back-to-top {
-  display: block;
-}
+
+
 
 /* akhir button */
 
@@ -1112,10 +1116,10 @@ margin-left: -10px;
   font-size: 14px;
 }
 
-.back-to-top{
+.to-top{
   bottom: 30px;
 }
-.back-to-top img{
+.to-top img{
   width: 30px;
 }
 

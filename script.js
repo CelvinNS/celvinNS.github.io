@@ -16,6 +16,30 @@ navbarLinks.forEach(link => {
 
 
 
+// Ketika pengguna scroll ke bawah 20px dari atas dokumen, tampilkan tombol
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var toTopButton = document.querySelector(".to-top");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    toTopButton.style.display = "block";
+  } else {
+    toTopButton.style.display = "none";
+  }
+  // tambahkan kondisi tambahan
+  if (document.documentElement.scrollHeight <= document.documentElement.clientHeight) {
+    toTopButton.style.display = "none";
+  }
+}
+
+// Ketika pengguna mengklik tombol, scroll kembali ke atas halaman
+function topFunction() {
+  document.body.scrollTop = 0; // Untuk Safari
+  document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, dan IE
+}
+
+
+
 
 // grapik peserta
 var ctx = document.getElementById('myChart').getContext('2d');
@@ -60,23 +84,9 @@ var ctx = document.getElementById('myChart').getContext('2d');
         }
     }
 });
+
 // akhir grapik peserta
 
-
-// Tampilkan tombol saat user scroll sejauh 20px dari atas halaman
-let backToTopButton = document.querySelector(".back-to-top");
-
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 100) {
-    backToTopButton.classList.add("show-back-to-top");
-  } else {
-    backToTopButton.classList.remove("show-back-to-top");
-  }
-});
-
-backToTopButton.addEventListener("click", () => {
-  window.scrollTo(0, 0);
-});
 
 
 // validasi form 
@@ -86,6 +96,9 @@ const scriptURL = form.action;
 const btnKirim = document.querySelector('.btn-kirim');
 const btnLoading = document.querySelector('.btn-loading');
 const alertBox = document.querySelector('.alert');
+
+
+
 
 form.addEventListener('submit', (e) => {
   e.preventDefault(); // mencegah form melakukan submit secara default
