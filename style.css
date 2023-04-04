@@ -282,7 +282,6 @@ html, body{
 
 #kursus .card{
   height: 595px;
-  cursor: pointer;
   box-shadow: 0px 0px 10px #5e5c5c;
   overflow: hidden;
 }
@@ -296,6 +295,7 @@ html, body{
 }
 
 
+
 #kursus .btn{
   position: absolute;
   bottom: 10px;
@@ -303,14 +303,11 @@ html, body{
   right: 0;
   margin: auto;
   width: 50%;
-  transition: all 0.3s ease-in-out;
 }
 
 #kursus .btn:hover{
-  transform: scale(1.1);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  background-color: #f1c40f;
-  
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.399);
+  background-color: rgba(255, 238, 6, 0.779);
 }
 .card_1 .btn{
     background-color: rgb(73, 93, 185);
@@ -385,6 +382,51 @@ tbody tr{
 background-color: #ffffff;
 }
 /* akhir table */
+
+
+/* jumbotron kursus */
+.jumbotron-kursus{
+  margin-top: 100px;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+  background: linear-gradient(45deg, #352f2f, #3781f9,rgb(255, 6, 6));
+  animation: background-color 10s ease infinite;
+  background-size: 400% 400%;
+}
+@keyframes background-color {
+  0% {
+    background-position: 0% 40%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.jumbotron-kursus h1{
+  font-weight: 800;
+  font-size: 70px;
+  color: rgb(234, 255, 0);
+}
+
+.jumbotron-kursus p{
+  font-size: 22px;
+}
+
+.jumbotron-kursus-jumbotron{
+  transition: all 5s ease-in-out;
+}
+
+.btn-kursus-jumbotron:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(112, 107, 107, 0.643);
+}
+/* akhir jumbotron kursus */
 
 
 /* akhir kursus */
@@ -541,12 +583,27 @@ background-color: #ffffff;
   transition: 0.3s all ease-in-out;
 }
 
+#tulis-testimoni .alert{
+  width: 40%;
+}
 
  #tulis-testimoni .btn-kirm:hover{
   transform: scale(1.1);
   box-shadow: 0 0 5px black ;
  }
 
+#tulis-testimoni .btn-loading{
+  background-color: rgb(94, 94, 246);
+  position: relative;
+  left: 33%;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0 0 3px black;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+ 
 
 /* akhir testimoni-page.html */
 
@@ -908,6 +965,30 @@ margin-left: -10px;
   min-height: 180rem;
 }
 
+.jumbotron-kursus{
+  padding: 50px;
+  margin-top:10px ;
+}
+
+.jumbotron-kursus h1{
+ padding-top: 50px;
+ font-size: 30px;
+}
+
+.jumbotron-kursus p{
+ font-size: 14px;
+}
+
+
+.jumbotron-kursus-jumbotron{
+  transition: all 5s ease-in-out;
+}
+
+.btn-kursus-jumbotron:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(112, 107, 107, 0.643);
+}
+
 #kursus .card{
   width: 250px;
   height: 360px;
@@ -953,6 +1034,7 @@ margin-left: -10px;
   margin: 0;
   height: 200px;
 }
+
 /* akhir kursus */
 
 /* ------------------------------------------------------------------- */
@@ -997,6 +1079,7 @@ margin-left: -10px;
   font-size: 12px;
 }
 
+
 /* testimoni-page.html  */
 
 
@@ -1024,10 +1107,17 @@ margin-left: -10px;
   width: 60%;
 }
 
+#tulis-testimoni .alert{
+  width: 60%;
+}
+
 #tulis-testimoni .btn-kirim{
   left: 50%;
 }
 
+#tulis-testimoni .btn-loading{
+  left: 40.1%;
+}
 /* akhir testimoni-page.html */
 
 
