@@ -521,7 +521,7 @@ background-color: #ffffff;
 .btn-testimoni{
   position: relative;
   font-size: 18px;
-  left: 75rem;
+  left: 87%;
   bottom: 5px;
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -556,7 +556,15 @@ background-color: #ffffff;
   text-align: start;
   font-size: 26px;
   font-family: "work sans", sans-serif;
-  font-weight: 400;
+  font-weight: 500 ;
+}
+
+#tulis-testimoni input{
+ box-shadow: 0 0 3px rgb(81, 71, 71);
+}
+
+#tulis-testimoni textarea{
+  box-shadow: 0 0 3px rgb(81, 71, 71);
 }
 
 #nama-testimoni{
@@ -1061,7 +1069,7 @@ margin-left: -10px;
 }
 
 #testimoni .container h2::after{
-  background-color: #0000ff;
+  background-color: #434edf;
 }
 
 #testimoni .carousel-indicators button{
@@ -1106,6 +1114,7 @@ margin-left: -10px;
   border-radius: 5px;
   width: 60%;
 }
+
 
 #tulis-testimoni .alert{
   width: 60%;
