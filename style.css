@@ -294,7 +294,7 @@ html, body{
   
 }
 
-#kursus .btn{
+#kursus .btn-kursus-card{
   position: absolute;
   bottom: 10px;
   left: 0;
@@ -302,57 +302,43 @@ html, body{
   margin: auto;
   width: 50%;
   cursor: default;
+  border: none;
+  border-radius: 6px;
+  text-decoration:none;
+  padding: 5px;
+  
 }
 
 
-.card_1 .btn{
+.card_1 .btn-kursus-card{
     background-color: rgb(73, 93, 185);
     color: white;
     font-weight: 500;
 }
 
-.card_1 .btn:hover{
-  background-color: rgb(73, 93, 185);
-  color: white;
-  font-weight: 500;
+
+.card_2 .btn-kursus-card{
+    background-color: rgb(15, 126, 72);
+    color: white;
+    font-weight: 500;
 }
 
-.card_2 .btn{
-    background-color: rgb(15, 126, 72);
-    color: white;
-    font-weight: 500;
-}
-.card_2 .btn:hover{
-    background-color: rgb(15, 126, 72);
-    color: white;
-    font-weight: 500;
-}
-.card_3 .btn{
+.card_3 .btn-kursus-card{
     background-color: rgb(209, 86, 33);
     color: white;
     font-weight: 500;
 }
-.card_3 .btn:hover{
-    background-color: rgb(33, 209, 39);
-    color: white;
-    font-weight: 500;
-}
 
-.card_4 .btn{
+.card_4 .btn-kursus-card{
     background-color: #0b89c0;
     color: white;
     font-weight: 500;
-}
-.card_4 .btn:hover{
-    background-color: #a80a6b;
-    color: white;
-    font-weight: 500;
+    text-align: center;
 }
 
 #kursus h4{
   font-family: 'work sans', sans-serif;
 }
-
 
 
 #kursus .card.card_4{
@@ -401,10 +387,15 @@ background-color: #ffffff;
 /* akhir table */
 
 /* btn kursus-page.html */
-#kursus .btn-kursus-page{
-  margin-top: 20px;
+#kursus .to-kursus-page{
   position: absolute;
-  left: 80%;
+  margin-top: 30px;
+}
+
+#kursus .btn-kursus-page{
+  position: relative;
+  margin-top: 20px;
+  left: 58rem;
   text-decoration: none;
   background-color: rgb(99, 99, 202);
   padding: 5px;
@@ -565,9 +556,9 @@ background-color: #ffffff;
 
 
 .btn-testimoni{
-  position: relative;
+  position: absolute;
   font-size: 18px;
-  left: 87%;
+  right: 14px;
   bottom: 5px;
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -776,15 +767,14 @@ background-color: #ffffff;
   position: relative;
   font-size: 18px;
   top: 25px;
-  padding: 5px;
-  left: 56.5rem;
-  border: solid 1px rgb(78, 73, 73);
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(101, 97, 97, 0.871);
-  color: white;
+  padding: 10px;
+  left: 56rem;
   text-decoration: none;
-  background-color: rgba(15, 95, 233, 0.997); 
-  transition: all 0.2s ease-in-out;
+  background-color: rgb(99, 99, 202);
+  width: 50%;
+  border-radius:5px;
+  color: white;
+  box-shadow: 0 0 5px rgb(76, 69, 69);
 }
 
 .btn-galeri:hover{
@@ -1007,6 +997,10 @@ margin-left: -10px;
   margin-top: -150px;
 }
 
+.misi h4{
+margin-bottom: 15px;
+}
+
 
 
 /* akhir tentang */
@@ -1071,16 +1065,7 @@ margin-left: -10px;
 }
 
 
-#kursus .btn{
-  position: absolute;
-  bottom: 10px;
-  font-size: 10px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 50%;
-  transition: all 0.3s ease-in-out;
-}
+
 
 #kursus .card.card_4{
   width: 100%;
@@ -1090,7 +1075,9 @@ margin-left: -10px;
 }
 
 #kursus .btn-kursus-page{
-  left: 75%;
+  position: relative;
+  left: 290px;
+  font-size: 12px;
 }
 
 .text-berjalan{
@@ -1137,7 +1124,7 @@ margin-left: -10px;
 
 #testimoni .btn-testimoni{
   position: relative;
-  left: 250px;
+  left: 260px;
   bottom: -70px;
   font-size: 12px;
 }
@@ -1210,8 +1197,9 @@ margin-left: -10px;
 
 #galeri .btn-galeri{
   position: relative;
-  left: 240px;
+  left: 275px;
   font-size: 12px;
+  padding: 5px;
 }
 
 
