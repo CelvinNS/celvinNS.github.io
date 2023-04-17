@@ -140,6 +140,12 @@ form.addEventListener('submit', (e) => {
 });
 
 
+// gambar besar ketika di klik 
+$(document).ready(function() {
+  $('.popup').magnificPopup({type:'image'});
+});
+
+
 
 
 
