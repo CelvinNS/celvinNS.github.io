@@ -29,7 +29,7 @@ html, body{
 }
 
 .navbar-nav a:hover{
-  color: rgb(9, 102, 242);
+  font-weight: bolder;
   background-color: rgba(141, 130, 130, 0.115);
   border-radius: 5px;
 }
@@ -59,13 +59,14 @@ html, body{
 
 /* akhir navbar */
 
-/* teks berjalan */
 
-/* akhir teks berjalan */
 
 /* jumbotron */
 .jumbotron{
-    padding-top: 10rem;
+    margin: 5px;
+    border-radius: 10px;
+    padding-top: 6rem;
+    margin-top: 5rem;
     min-height:500px;
     background-image: url("img/bg-jumbotron/bg3.png");
     background-size:cover;
@@ -98,6 +99,10 @@ html, body{
     font-weight: 300;
 }
 
+
+/* akhir jumbotron */
+
+/* teks berjalan */
 .teks-berjalan{
   background:linear-gradient( to right, rgb(217, 78, 78), rgb(237, 0, 87), rgb(255, 0, 0));
   padding: 25px;
@@ -108,14 +113,12 @@ html, body{
   font-family: 'work sans', sans-serif;
   font-size: 24px;
 }
-
-/* akhir jumbotron */
-
+/* akhir teks berjalan */
 
 
 /* tentang */
 #tentang .container{
-    min-height: 600px;
+    min-height: 170vh;
     padding-top: 2rem;
 }
 
@@ -247,7 +250,7 @@ html, body{
 
 /* kursus */
 #kursus .container{
-  min-height: 140rem;
+  min-height: 120rem;
   padding-top: 6rem;
 }
 
@@ -399,8 +402,10 @@ background-color: #ffffff;
 
 /* btn kursus-page.html */
 #kursus .to-kursus-page{
-  position: absolute;
-  margin-top: 30px;
+  position: relative;
+  right: 30px;
+  margin-top: 50px;
+  font-size: 25px;
 }
 
 #kursus .btn-kursus-page{
@@ -413,20 +418,23 @@ background-color: #ffffff;
   border-radius:5px;
   color: white;
   box-shadow: 0 0 5px rgb(76, 69, 69);
+  transition: all 0.3s ease-in-out;
 }
 
 #kursus .btn-kursus-page:hover{
-  box-shadow: 0 0 10px black;
+  transform: scale(1.1);
+  box-shadow: 0 0 5px black;
 }
 /* akhir btn kursus-page.html */
 
 /* jumbotron kursus */
 .jumbotron-kursus{
-  margin-top: 100px;
+  margin: 5px;
+  margin-top: 5rem;
   padding: 100px;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 10px;
   color: white;
   background: linear-gradient(45deg, #352f2f, #3781f9,rgb(255, 6, 6));
   animation: background-color 10s ease infinite;
@@ -649,8 +657,9 @@ background-color: #ffffff;
 
 #testimoni{
   min-height: 500px;
+  margin: 10px;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2); 
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: rgba(255, 255, 255, .15);
   background-image: url("img/testimoni/bg4.png");
   background-size: cover;
@@ -705,12 +714,13 @@ background-color: #ffffff;
 #testimoni .carousel-item h4{
   font-size: 22px;
   line-height: 1.375em;
-  width: auto;
+  width: 50rem;
   color: white;
   font-weight:500;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   vertical-align: middle;
-  margin: 70px 0;
+  margin: auto;
+  margin-bottom: 5rem;
 }
 
 #testimoni .carousel-item span{
@@ -760,16 +770,16 @@ background-color: #ffffff;
 #tulis-testimoni{
   width: 1000px;
   margin: auto;
-  background-color: rgb(14, 45, 71);
+  background-color: rgb(255, 255, 255);
   padding: 20px;
   padding-top: 50px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgb(76, 69, 69);
-  color: white;
+  box-shadow: 0 0 5px rgb(76, 69, 69);
+  
 }
 #tulis-testimoni label{
   text-align: start;
-  font-size: 26px;
+  font-size: 22px;
   font-family: "work sans", sans-serif;
   font-weight: 500 ;
   position: relative;
@@ -917,10 +927,10 @@ background-color: #ffffff;
 
 
 #galeri .card{
-  height: auto;
+  height: 20rem;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0px 0px 6px #1b1a1a;
+  box-shadow: 0 0 6px rgb(56, 52, 52);
   color: white;
   transition: all 0.2s ease-in-out;
 }
@@ -959,16 +969,16 @@ background-color: #ffffff;
 
 
 #galeri .card-body h5{
-  font-size: 18px;
+  font-size: 16px;
 }
 
 
 .btn-galeri{
   position: relative;
-  font-size: 18px;
-  top: 25px;
+  font-size: 25px;
+  top: 50px;
   padding: 10px;
-  left: 56rem;
+  left:53.6rem;
   text-decoration: none;
   background-color: rgb(99, 99, 202);
   width: 50%;
@@ -1013,6 +1023,8 @@ background-color: #ffffff;
   padding-top: 2rem;
   margin-left: 5rem;
 }
+
+
 
 /* akhir kontak */
 
@@ -1130,8 +1142,9 @@ font-size: 12px;
 
 /* jumbotron */
 .jumbotron{
-  padding-top: 12rem;
-  min-height:300px;
+  margin-top: 6rem;
+  padding-top: 6rem;
+  min-height:200px;
   color: white;
   background: linear-gradient(45deg, #f8f1cd, #3776dc,rgb(150, 0, 0));
   animation: background-color 5s ease infinite;
@@ -1231,8 +1244,10 @@ margin-bottom: 15px;
 }
 
 .jumbotron-kursus{
-  padding: 50px;
-  margin-top:10px ;
+  padding: 30px;
+  padding-top: 0px;
+  margin: 5px;
+  margin-top: 6rem;
 }
 
 .jumbotron-kursus h1{
@@ -1398,7 +1413,10 @@ margin-bottom: 15px;
   margin-bottom: 90px;
 }
 
-
+.to-kursus-page{
+ left: 0.1px;
+ margin-bottom: 8rem;
+}
 
 
 
@@ -1412,7 +1430,7 @@ margin-bottom: 15px;
 
 /* testimoni */
 #testimoni{
-  margin-top: 150px;
+  margin: 5px;
   background-size:cover;
   background-position: 90%;
   background-attachment: fixed;
@@ -1446,7 +1464,7 @@ margin-bottom: 15px;
 
 #testimoni .btn-testimoni{
   position: relative;
-  left: 260px;
+  left: 250px;
   bottom: -70px;
   font-size: 12px;
 }
@@ -1524,6 +1542,7 @@ margin-bottom: 15px;
 
 #galeri .card{
   width: 300px;
+  height: 255px;
 }
 
 #galeri .card-body h5{
@@ -1536,9 +1555,10 @@ margin-bottom: 15px;
 
 #galeri .btn-galeri{
   position: relative;
-  left: 275px;
+  left: 270px;
   font-size: 12px;
   padding: 5px;
+  margin-bottom: 5px;
 }
 
 
@@ -1549,9 +1569,10 @@ margin-bottom: 15px;
 
 /* kontak & footer*/
 #kontak{
-  margin-top: 60px;
+  margin-top: 10rem;
   padding-top: 0px;
 }
+
 #kontak .kontak_pribadi{
   margin-left: -10px;
   font-size: 14px;
@@ -1574,7 +1595,7 @@ margin-bottom: 15px;
 
 /* footer */
 .footer{
-  margin-left: -20px;
+margin-left: -20px;
  justify-content: center;
 }
 /* akhir footer */
