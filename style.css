@@ -70,8 +70,8 @@ html, body{
     min-height:500px;
     background-image: url("img/bg-jumbotron/bg3.png");
     background-size:cover;
-    background-attachment:fixed;
-    background-position: 0px -4rem;
+    background-attachment:scroll;
+    background-position: 0px -6rem;
     color: white;
     padding-left: 3rem;
 }
@@ -118,7 +118,7 @@ html, body{
 
 /* tentang */
 #tentang .container{
-    min-height: 170vh;
+    min-height: 165vh;
     padding-top: 2rem;
 }
 
@@ -772,9 +772,10 @@ background-color: #ffffff;
   margin: auto;
   background-color: rgb(255, 255, 255);
   padding: 20px;
+  border: solid 1px rgb(151, 143, 143);
   padding-top: 50px;
   border-radius: 10px;
-  box-shadow: 0 0 5px rgb(76, 69, 69);
+  box-shadow: 0 0 2px rgb(76, 69, 69);
   
 }
 #tulis-testimoni label{
@@ -784,6 +785,10 @@ background-color: #ffffff;
   font-weight: 500 ;
   position: relative;
   left: 80px;
+}
+
+#tulis-testimoni  h2{
+  font-size: 32px;
 }
 
 #tulis-testimoni input{
@@ -1482,6 +1487,7 @@ margin-bottom: 15px;
   margin-bottom: 30px;
   position: relative;
   bottom: 10px;
+  font-size: 25px;
 }
 
 #tulis-testimoni label{
