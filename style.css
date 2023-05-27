@@ -350,9 +350,7 @@ html, body{
     text-align: center;
 }
 
-#kursus h4{
-  font-family: 'work sans', sans-serif;
-}
+
 
 
 #kursus .card.card_4{
@@ -393,7 +391,7 @@ table{
   
 }
 thead tr{
-  background-color: #f09323;
+  background: linear-gradient(to right, rgb(38, 116, 234), rgb(159, 188, 233));
 }
 tbody tr{ 
 background-color: #ffffff;
