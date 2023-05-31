@@ -673,6 +673,7 @@ background-color: #ffffff;
   padding-bottom: 20px;
   position: relative;
   color: white;
+  
 }
 
 #testimoni .container h2::before {
@@ -770,10 +771,9 @@ background-color: #ffffff;
   margin: auto;
   background-color: rgb(255, 255, 255);
   padding: 20px;
-  border: solid 1px rgb(151, 143, 143);
   padding-top: 50px;
   border-radius: 10px;
-  box-shadow: 0 0 2px rgb(76, 69, 69);
+  box-shadow: 0 0 5px rgb(151, 191, 231);
   
 }
 #tulis-testimoni label{
@@ -790,20 +790,20 @@ background-color: #ffffff;
 }
 
 #tulis-testimoni input{
- box-shadow: 0 0 3px rgb(81, 71, 71);
+ box-shadow: 0 0 2px rgb(144, 144, 144);
  width: 800px;
  position: relative;
  left: 80px;
 }
 #tulis-testimoni input:focus{
- outline-color:rgb(129, 129, 170);
+ outline-color: rgb(143, 143, 216)
  
 }
 
 
 
 #tulis-testimoni textarea{
-  box-shadow: 0 0 3px rgb(81, 71, 71);
+  box-shadow: 0 0 2px rgb(112, 108, 108);
   width: 800px;
   position: relative;
   left: 80px;
@@ -996,6 +996,13 @@ background-color: #ffffff;
   box-shadow: 0px 0px 9px rgb(50, 48, 48);
 }
 
+/* pagination */
+.pagination-container{
+  position: fixed;
+  top:20px ;
+  
+}
+/* akhir pagination */
 
 /* akhir galeri */
 
@@ -1203,9 +1210,8 @@ margin-left: -10px;
 /* -------------------------------------------------------------- */
 
 /* tentang */
-
-#tentang{
-  min-height:110vh;
+#tentang .container{
+  min-height: 90rem;
 }
 
 #tentang .visi, .misi{
@@ -1236,7 +1242,7 @@ margin-bottom: 15px;
 
 /* kursus */
 #kursus{
-  min-height: 150rem;
+  min-height: 180rem;
 }
 
 #kursus .status-kursus{
@@ -1434,9 +1440,11 @@ margin-bottom: 15px;
 /* testimoni */
 #testimoni{
   margin: 5px;
-  background-size:cover;
-  background-position: 90%;
-  background-attachment: fixed;
+  color: black;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 #testimoni .testimoni-img{
@@ -1444,6 +1452,7 @@ margin-bottom: 15px;
 }
 
 #testimoni .carousel-item h4{
+  color: black;
   font-size: 10px;
   line-height: 1.375em;
   width: auto;
@@ -1451,6 +1460,11 @@ margin-bottom: 15px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   vertical-align: middle;
   margin: 70px 0;
+}
+
+#testimoni .container h2{
+  color: black;
+  font-size: 24px;
 }
 
 #testimoni .container h2::after{
@@ -1468,7 +1482,7 @@ margin-bottom: 15px;
 #testimoni .btn-testimoni{
   position: relative;
   left: 250px;
-  bottom: -70px;
+  bottom: -70px;  
   font-size: 12px;
 }
 
@@ -1477,7 +1491,7 @@ margin-bottom: 15px;
 
 
 #tulis-testimoni{
-  width: 390px;
+  width: 380px;
   margin: auto;
 }
 #tulis-testimoni h2{
@@ -1564,6 +1578,8 @@ margin-bottom: 15px;
   padding: 5px;
   margin-bottom: 5px;
 }
+
+
 
 
 /* akhir galeri */
