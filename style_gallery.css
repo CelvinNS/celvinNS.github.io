@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.gallery_container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.gallery_container .gallery_item {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery_container .gallery_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.gallery_container .gallery_item figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: bold;
+  opacity: 0;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.gallery_container .img_caption {
+  position: relative;
+  transform: translate(-0%, -100%);
+  text-align: center;
+  color: white;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.549);
+  backdrop-filter: blur(5px);
+}
+
+.gallery_container .img_caption h6 {
+  position: relative;
+  font-size: 20px;
+  text-align: end;
+}
+
+.gallery_container .gallery_item:hover img {
+  filter: brightness(0.5);
+  transform: scale(1.2);
+}
+
+.gallery_container .gallery_item:hover figcaption {
+  opacity: 1;
+}
+
+.gallery_container .gallery_item:hover .img_caption {
+  opacity: 0;
+}
+
+.gallery_container .gallery_item.item_1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.gallery_container .gallery_item.item_2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.gallery_container .gallery_item.item_3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 7;
+}
+
+.gallery_container .gallery_item.item_4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
+.gallery_container .gallery_item.item_5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 9;
+  grid-row-end: 12;
+}
+.gallery_container .gallery_item.item_6 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 7;
+  grid-row-end: 11;
+}
+.gallery_container .gallery_item.item_7 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 12;
+  grid-row-end: 18;
+}
+.gallery_container .gallery_item.item_8 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 12;
+  grid-row-end: 15;
+}
+.gallery_container .gallery_item.item_9 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 11;
+  grid-row-end: 11;
+}
+
+@media (max-width: 600px) {
+  .gallery_container {
+    grid-gap: 0.5em;
+  }
+
+  .gallery_container .gallery_item figcaption {
+    font-size: 0.8rem;
+  }
+
+  .gallery_container .gallery_item.item_1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .gallery_container .gallery_item.item_2 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .gallery_container .gallery_item.item_3 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 11;
+  }
+
+  .gallery_container .gallery_item.item_4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  }
+  .gallery_container .gallery_item.item_5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 9;
+    grid-row-end: 14;
+  }
+  .gallery_container .gallery_item.item_6 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 11;
+    grid-row-end: 12;
+  }
+  .gallery_container .gallery_item.item_7 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 12;
+    grid-row-end: 14;
+  }
+
+  .gallery_container .img_caption {
+    display: none;
+  }
+}
+
+@media (max-width: 423px) {
+  .gallery_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery_container .img_caption {
+    display: none;
+  }
+}
+
+.lightbox_container {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000c0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: scale(0.5);
+  opacity: 0%;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.lightbox_container.show {
+  transform: scale(1);
+  opacity: 100%;
+  visibility: visible;
+}
+
+.lightbox_container #close {
+  color: #ffffff;
+  z-index: 3;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0.25em 0.4em;
+  border-radius: 5px;
+  transform: scale(1.7);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lightbox_container #close:hover {
+  background-color: #dfdfdf6c;
+}
+
+.lightbox_container #close:active {
+  background-color: rgb(0, 0, 0);
+  transition: 0s !important;
+}
+
+.lightbox_container .parent_navigation {
+  position: static;
+  z-index: 3;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lightbox_container .parent_navigation #ripple {
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 0.8em;
+  margin: 4rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.lightbox_container .parent_navigation #ripple:hover {
+  background-color: #dfdfdf6c;
+}
+
+.lightbox_container .parent_navigation #ripple span {
+  position: absolute;
+  background-color: #dfdfdf6c;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: anim 1s;
+  border-radius: 50%;
+}
+
+@keyframes anim {
+  0% {
+    height: 0px;
+    width: 0px;
+    opacity: 100%;
+  }
+  100% {
+    height: 500px;
+    width: 500px;
+    opacity: 0%;
+  }
+}
+
+.lightbox_container .lightbox_item {
+  position: absolute;
+  height: auto;
+  width: 70%;
+  transition: 0.3s ease-in;
+}
+
+.lightbox_container .lightbox_item.active {
+  opacity: 0;
+}
+
+.lightbox_container .lightbox_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lightbox_container .lightbox_item figcaption {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding-top: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .lightbox_container .lightbox_item {
+    width: 83%;
+  }
+  .lightbox_container .parent_navigation #ripple {
+    margin: 0rem;
+    padding: 0.4em;
+  }
+}

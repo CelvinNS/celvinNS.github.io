@@ -1,34 +1,32 @@
-html, body{
-    font-size: 20px;
-    font-family:'Work Sans', sans-serif;
-    overflow-x: hidden;   
+html,
+body {
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
 }
-
 
 /* tampilan desktop */
 
 /* navbar */
-.navbar{
-    background-color: white;
+.navbar {
+  background-color: white;
 }
-.navbar-brand img{
-    width: 260px;
-    margin-left: 1rem;
-
-}
-
-.navbar-nav{
-    padding-right: 5rem;
-    font-size: 18px;
-    font-family: arial,Arial, Helvetica, sans-serif;
-}
-.navbar-nav a{
-    color: rgb(73, 73, 64);
-    font-weight:500;
-
+.navbar-brand img {
+  width: 260px;
+  margin-left: 1rem;
 }
 
-.navbar-nav a:hover{
+.navbar-nav {
+  padding-right: 5rem;
+  font-size: 18px;
+  font-family: arial, Arial, Helvetica, sans-serif;
+}
+.navbar-nav a {
+  color: rgb(73, 73, 64);
+  font-weight: 500;
+}
+
+.navbar-nav a:hover {
   font-weight: bolder;
   background-color: rgba(141, 130, 130, 0.115);
   border-radius: 5px;
@@ -38,7 +36,13 @@ html, body{
   font-weight: bold;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(70, 57, 57, 0.464);
-  background: linear-gradient(45deg, #f1025e91, #1466d191, #0cbb6a8e, rgba(255, 234, 0, 0.557));
+  background: linear-gradient(
+    45deg,
+    #f1025e91,
+    #1466d191,
+    #0cbb6a8e,
+    rgba(255, 234, 0, 0.557)
+  );
   animation: background-color 5s ease infinite;
   background-size: 400% 400%;
   color: rgb(0, 0, 0);
@@ -55,87 +59,84 @@ html, body{
   }
 }
 
-
-
 /* akhir navbar */
 
-
-
 /* jumbotron */
-.jumbotron{
-    margin: 5px;
-    border-radius: 10px;
-    padding-top: 6rem;
-    margin-top: 5rem;
-    min-height:500px;
-    background-image: url("img/bg-jumbotron/bg3.png");
-    background-size:cover;
-    background-attachment:scroll;
-    background-position: 0px -6rem;
-    color: white;
-    padding-left: 3rem;
+.jumbotron {
+  margin: 5px;
+  border-radius: 10px;
+  padding-top: 6rem;
+  margin-top: 5rem;
+  min-height: 500px;
+  background-image: url("img/bg-jumbotron/bg3.png");
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: 0px -6rem;
+  color: white;
+  padding-left: 3rem;
 }
-.jumbotron h2{
+.jumbotron h2 {
   font-size: 40px;
-  font-family:'work sans', sans-serif;
+  font-family: "work sans", sans-serif;
   font-weight: 600;
   margin-bottom: 0;
 }
-.jumbotron h1{
-  padding:0px;
+.jumbotron h1 {
+  padding: 0px;
   font-size: 85px;
-  font-family: 'Mitr', sans-serif;
+  font-family: "Mitr", sans-serif;
   margin-bottom: 0;
   background: linear-gradient(to right, #2e35f6, #fc0303, #0634b3);
   background-clip: text;
-  -webkit-background-clip:text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.jumbotron p{
-    font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-family: 'work sans', sans-serif;
-    font-weight: 300;
+.jumbotron p {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "work sans", sans-serif;
+  font-weight: 300;
 }
-
 
 /* akhir jumbotron */
 
 /* teks berjalan */
-.teks-berjalan{
-  background:linear-gradient( to right, rgb(217, 78, 78), rgb(237, 0, 87), rgb(255, 0, 0));
+.teks-berjalan {
+  background: linear-gradient(
+    to right,
+    rgb(217, 78, 78),
+    rgb(237, 0, 87),
+    rgb(255, 0, 0)
+  );
   padding: 25px;
   color: white;
   margin: 5px;
   border-radius: 10px;
   font-weight: bold;
-  font-family: 'work sans', sans-serif;
+  font-family: "work sans", sans-serif;
   font-size: 24px;
 }
 /* akhir teks berjalan */
 
-
 /* tentang */
-#tentang .container{
-    min-height: 165vh;
-    padding-top: 2rem;
+#tentang .container {
+  min-height: 165vh;
+  padding-top: 2rem;
 }
 
-#tentang .container h2{
+#tentang .container h2 {
   font-weight: bold;
-  
-  
 }
-#tentang p{
-  font-family: 'work sans', sans-serif;
+#tentang p {
+  font-family: "work sans", sans-serif;
   text-align: justify;
   padding-top: 1.5rem;
 }
 
 #tentang ol li {
   padding-top: 10px;
-  font-family: 'work sans', sans-serif;
+  font-family: "work sans", sans-serif;
 }
 #tentang h2 {
   font-weight: bold;
@@ -155,7 +156,7 @@ html, body{
   left: calc(50% - 60px);
 }
 
- .tentang h2::after {
+.tentang h2::after {
   content: "";
   position: absolute;
   display: block;
@@ -166,17 +167,17 @@ html, body{
   left: calc(50% - 20px);
 }
 
-.tentang h3{
+.tentang h3 {
   font-weight: bold;
 }
 /* motto */
-.motto{
-  font-family: 'Mitr', sans-serif;
+.motto {
+  font-family: "Mitr", sans-serif;
   animation: glitch 10s infinite;
 }
 
 /* Animasi glitch atau rusak */
-@keyframes glitch{
+@keyframes glitch {
   0% {
     transform: none;
     clip-path: inset(0 100% 0 0);
@@ -242,19 +243,15 @@ html, body{
 
 /* akhir tentang */
 
-
-
-
 /* --------------------------------------------------------- */
 
-
 /* kursus */
-#kursus .container{
+#kursus .container {
   min-height: 120rem;
   padding-top: 6rem;
 }
 
-#kursus .container h2{
+#kursus .container h2 {
   font-weight: bold;
 }
 #kursus h2 {
@@ -275,7 +272,7 @@ html, body{
   left: calc(50% - 60px);
 }
 
- #kursus h2::after {
+#kursus h2::after {
   content: "";
   position: absolute;
   display: block;
@@ -286,29 +283,28 @@ html, body{
   left: calc(50% - 20px);
 }
 
-#kursus .status-kursus{
+#kursus .status-kursus {
   font-weight: 500;
-  font-family: 'work-sans', sans-serif;
+  font-family: "work-sans", sans-serif;
   font-size: 32px;
   position: relative;
   left: 40px;
 }
 
-#kursus .card{
+#kursus .card {
   height: 595px;
   box-shadow: 0px 0px 10px #5e5c5c;
   overflow: hidden;
 }
 
-#kursus .card p{
+#kursus .card p {
   font-size: 16px;
-  font-family: 'work sans', sans-serif;
+  font-family: "work sans", sans-serif;
   text-overflow: ellipsis;
   overflow: hidden;
-  
 }
 
-#kursus .btn-kursus-card{
+#kursus .btn-kursus-card {
   position: absolute;
   bottom: 10px;
   left: 0;
@@ -318,50 +314,50 @@ html, body{
   cursor: default;
   border: none;
   border-radius: 6px;
-  text-decoration:none;
+  text-decoration: none;
   padding: 5px;
-  
 }
 
-
-.card_1 .btn-kursus-card{
-    background-color: rgb(73, 93, 185);
-    color: white;
-    font-weight: 500;
+.card_1 .btn-kursus-card {
+  background-color: rgb(73, 93, 185);
+  color: white;
+  font-weight: 500;
 }
 
-
-.card_2 .btn-kursus-card{
-    background-color: rgb(15, 126, 72);
-    color: white;
-    font-weight: 500;
+.card_2 .btn-kursus-card {
+  background-color: rgb(15, 126, 72);
+  color: white;
+  font-weight: 500;
 }
 
-.card_3 .btn-kursus-card{
-    background-color: rgb(209, 86, 33);
-    color: white;
-    font-weight: 500;
+.card_3 .btn-kursus-card {
+  background-color: rgb(209, 86, 33);
+  color: white;
+  font-weight: 500;
 }
 
-.card_4 .btn-kursus-card{
-    background-color: #363d3f;
-    color: white;
-    font-weight: 500;
-    text-align: center;
+.card_4 .btn-kursus-card {
+  background-color: #363d3f;
+  color: white;
+  font-weight: 500;
+  text-align: center;
 }
 
-
-
-
-#kursus .card.card_4{
+#kursus .card.card_4 {
   width: 100%;
   padding: 0;
   margin: 0;
   height: 400px;
 }
 
-#kursus .card.card_4 .card-header{
-  background: linear-gradient(45deg, #db0f5d, #1466d1, #1b6a45, rgb(255, 72, 0));
+#kursus .card.card_4 .card-header {
+  background: linear-gradient(
+    45deg,
+    #db0f5d,
+    #1466d1,
+    #1b6a45,
+    rgb(255, 72, 0)
+  );
   animation: background-color 5s ease infinite;
   background-size: 400% 400%;
   color: rgb(0, 0, 0);
@@ -378,55 +374,54 @@ html, body{
   }
 }
 
-#kursus .card.card_4 .card-body{
+#kursus .card.card_4 .card-body {
   background-image: url("img/program_kursus/bg_card4.jpg");
   background-size: cover;
 }
 
 /* table */
-table{
+table {
   border-radius: 10px;
   border: solid 1px rgb(58, 56, 56);
   font-family: arial;
-  
 }
-thead tr{
+thead tr {
   background: linear-gradient(to right, rgb(38, 116, 234), rgb(159, 188, 233));
 }
-tbody tr{ 
-background-color: #ffffff;
+tbody tr {
+  background-color: #ffffff;
 }
 /* akhir table */
 
 /* btn kursus-page.html */
-#kursus .to-kursus-page{
+#kursus .to-kursus-page {
   position: relative;
   right: 30px;
   margin-top: 50px;
   font-size: 25px;
 }
 
-#kursus .btn-kursus-page{
+#kursus .btn-kursus-page {
   position: relative;
   margin-top: 20px;
   left: 58rem;
   text-decoration: none;
   background-color: rgb(99, 99, 202);
   padding: 5px;
-  border-radius:5px;
+  border-radius: 5px;
   color: white;
   box-shadow: 0 0 5px rgb(76, 69, 69);
   transition: all 0.3s ease-in-out;
 }
 
-#kursus .btn-kursus-page:hover{
+#kursus .btn-kursus-page:hover {
   transform: scale(1.1);
   box-shadow: 0 0 5px black;
 }
 /* akhir btn kursus-page.html */
 
 /* jumbotron kursus */
-.jumbotron-kursus{
+.jumbotron-kursus {
   margin: 5px;
   margin-top: 5rem;
   padding: 100px;
@@ -434,7 +429,7 @@ background-color: #ffffff;
   align-items: center;
   border-radius: 10px;
   color: white;
-  background: linear-gradient(45deg, #352f2f, #3781f9,rgb(255, 6, 6));
+  background: linear-gradient(45deg, #352f2f, #3781f9, rgb(255, 6, 6));
   animation: background-color 10s ease infinite;
   background-size: 400% 400%;
 }
@@ -450,46 +445,50 @@ background-color: #ffffff;
   }
 }
 
-.jumbotron-kursus h1{
+.jumbotron-kursus h1 {
   font-weight: 800;
   font-size: 70px;
   color: rgb(234, 255, 0);
 }
 
-.jumbotron-kursus p{
+.jumbotron-kursus p {
   font-size: 22px;
 }
 
-.jumbotron-kursus-jumbotron{
+.jumbotron-kursus-jumbotron {
   transition: all 5s ease-in-out;
 }
 
-.btn-kursus-jumbotron:hover{
+.btn-kursus-jumbotron:hover {
   transform: scale(1.1);
   box-shadow: 0 0 10px rgba(112, 107, 107, 0.643);
 }
 /* akhir jumbotron kursus */
 
 /* teks berjalan */
-.text-berjalan-kursus{
-  background: linear-gradient(to right, rgb(221, 255, 2), rgb(223, 184, 11), rgb(200, 134, 11) );
+.text-berjalan-kursus {
+  background: linear-gradient(
+    to right,
+    rgb(221, 255, 2),
+    rgb(223, 184, 11),
+    rgb(200, 134, 11)
+  );
   padding: 25px;
   margin: 5px;
   border-radius: 10px;
   font-weight: bold;
-  font-family: 'work sans', sans-serif;
+  font-family: "work sans", sans-serif;
   font-size: 24px;
 }
 /* akhir teks berjalan */
 
-
 /* card kursus-page */
-.status-kursus-page{
+.status-kursus-page {
   font-size: 32px;
   margin-bottom: 50px;
 }
-.card-1{
-  background-color:  #174c94;
+.card-1 {
+  background-color: #174c94;
   border-radius: 10px;
   box-shadow: 0 0 5px rgb(163, 153, 153);
   color: white;
@@ -498,7 +497,7 @@ background-color: #ffffff;
   margin: auto;
 }
 
-.card-1 img{
+.card-1 img {
   position: relative;
   top: 80px;
   right: 70px;
@@ -506,23 +505,22 @@ background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 0 5px rgb(57, 57, 65);
 }
-.card-1 h5{
+.card-1 h5 {
   position: relative;
   left: 300px;
   bottom: 200px;
   font-size: 40px;
 }
 
-.card-1 p{
+.card-1 p {
   width: 800px;
   position: relative;
   left: 300px;
   bottom: 190px;
   overflow: hidden;
-
 }
 
-.card-1 a{
+.card-1 a {
   position: relative;
   left: 300px;
   bottom: 180px;
@@ -536,11 +534,11 @@ background-color: #ffffff;
   cursor: default;
 }
 
-.card-1 a:hover{
+.card-1 a:hover {
   color: white;
 }
 
-.card-2{
+.card-2 {
   background-color: #1c7444;
   border-radius: 10px;
   box-shadow: 0 0 5px rgb(163, 153, 153);
@@ -551,7 +549,7 @@ background-color: #ffffff;
   margin-top: 40px;
 }
 
-.card-2 img{
+.card-2 img {
   position: relative;
   top: 80px;
   right: 70px;
@@ -559,21 +557,21 @@ background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 0 5px rgb(57, 57, 65);
 }
-.card-2 h5{
+.card-2 h5 {
   position: relative;
   left: 300px;
   bottom: 200px;
   font-size: 40px;
 }
 
-.card-2 p{
+.card-2 p {
   width: 800px;
   position: relative;
   left: 300px;
   bottom: 190px;
 }
 
-.card-2 a{
+.card-2 a {
   position: relative;
   left: 300px;
   bottom: 180px;
@@ -584,15 +582,14 @@ background-color: #ffffff;
   background-color: #2c7c51;
   color: white;
   font-weight: 500;
-  cursor:default;
+  cursor: default;
 }
 
-.card-2 a:hover{
+.card-2 a:hover {
   color: white;
 }
 
-
-.card-3{
+.card-3 {
   background-color: #d44424;
   border-radius: 10px;
   box-shadow: 0 0 5px rgb(163, 153, 153);
@@ -603,7 +600,7 @@ background-color: #ffffff;
   margin-top: 40px;
 }
 
-.card-3 img{
+.card-3 img {
   position: relative;
   top: 90px;
   right: 70px;
@@ -611,21 +608,21 @@ background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 0 5px rgb(57, 57, 65);
 }
-.card-3 h5{
+.card-3 h5 {
   position: relative;
   left: 300px;
   bottom: 200px;
   font-size: 40px;
 }
 
-.card-3 p{
+.card-3 p {
   width: 800px;
   position: relative;
   left: 300px;
   bottom: 190px;
 }
 
-.card-3 a{
+.card-3 a {
   position: relative;
   left: 300px;
   bottom: 180px;
@@ -639,41 +636,36 @@ background-color: #ffffff;
   cursor: default;
 }
 
-.card-3 a:hover{
+.card-3 a:hover {
   color: white;
 }
 /* akhir kursus-page */
-
 
 /* akhir kursus */
 
 /* ------------------------------------------------------------------------------*/
 
-
-
 /* testimoni */
 
-#testimoni{
+#testimoni {
   min-height: 500px;
   margin: 10px;
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2); 
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  background-color: rgba(255, 255, 255, .15);
+  background-color: rgba(255, 255, 255, 0.15);
   background-image: url("img/testimoni/bg4.png");
   background-size: cover;
-  background-attachment:fixed;
+  background-attachment: fixed;
   backdrop-filter: blur(5px);
 }
 
-
 #testimoni .container h2 {
   font-weight: bold;
-  font-family: 'work sans', sans-serif;
+  font-family: "work sans", sans-serif;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
   color: white;
-  
 }
 
 #testimoni .container h2::before {
@@ -687,7 +679,7 @@ background-color: #ffffff;
   left: calc(50% - 60px);
 }
 
- #testimoni .container h2::after {
+#testimoni .container h2::after {
   content: "";
   position: absolute;
   display: block;
@@ -698,53 +690,50 @@ background-color: #ffffff;
   left: calc(50% - 20px);
 }
 
-
-
 /* style testimoni carousel */
-#testimoni .testimoni-img{
-  margin:0 1em 0 1em;
-  border-radius:100%;
-  width:150px;
+#testimoni .testimoni-img {
+  margin: 0 1em 0 1em;
+  border-radius: 100%;
+  width: 150px;
 }
 
-#testimoni .carousel-item{
+#testimoni .carousel-item {
   transition: all 0.8s ease-in-out;
 }
-#testimoni .carousel-item h4{
+#testimoni .carousel-item h4 {
   font-size: 22px;
   line-height: 1.375em;
   width: 50rem;
   color: white;
-  font-weight:500;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   vertical-align: middle;
   margin: auto;
   margin-bottom: 5rem;
 }
 
-#testimoni .carousel-item span{
+#testimoni .carousel-item span {
   font-weight: bold;
 }
 
-#testimoni .carousel-indicators button{
+#testimoni .carousel-indicators button {
   background-color: rgba(104, 59, 59, 0.653);
   border-radius: 100%;
   height: 12px;
-  width: 15px; 
+  width: 15px;
 }
-#testimoni .carousel-indicators .active{
+#testimoni .carousel-indicators .active {
   background-color: rgb(17, 2, 2);
 }
 
-
-.btn-testimoni{
+.btn-testimoni {
   position: absolute;
   font-size: 18px;
   right: 14px;
   bottom: 5px;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border: solid 1px rgb(143, 135, 135);
   background-color: rgba(9, 9, 9, 0.692);
   border-radius: 6px;
@@ -752,21 +741,17 @@ background-color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
 
-.btn-testimoni:hover{
-  color: white ;
+.btn-testimoni:hover {
+  color: white;
   transform: scale(1.1);
   box-shadow: 0px 0px 5px rgb(70, 71, 74);
-  
 }
-
-
 
 /* akhir testimoni carousel */
 
 /* testimoni-page.html  */
 
-
-#tulis-testimoni{
+#tulis-testimoni {
   width: 1000px;
   margin: auto;
   background-color: rgb(255, 255, 255);
@@ -774,35 +759,31 @@ background-color: #ffffff;
   padding-top: 50px;
   border-radius: 10px;
   box-shadow: 0 0 5px rgb(151, 191, 231);
-  
 }
-#tulis-testimoni label{
+#tulis-testimoni label {
   text-align: start;
   font-size: 22px;
   font-family: "work sans", sans-serif;
-  font-weight: 500 ;
+  font-weight: 500;
   position: relative;
   left: 80px;
 }
 
-#tulis-testimoni  h2{
+#tulis-testimoni h2 {
   font-size: 32px;
 }
 
-#tulis-testimoni input{
- box-shadow: 0 0 2px rgb(144, 144, 144);
- width: 800px;
- position: relative;
- left: 80px;
+#tulis-testimoni input {
+  box-shadow: 0 0 2px rgb(144, 144, 144);
+  width: 800px;
+  position: relative;
+  left: 80px;
 }
-#tulis-testimoni input:focus{
- outline-color: rgb(143, 143, 216)
- 
+#tulis-testimoni input:focus {
+  outline-color: rgb(143, 143, 216);
 }
 
-
-
-#tulis-testimoni textarea{
+#tulis-testimoni textarea {
   box-shadow: 0 0 2px rgb(112, 108, 108);
   width: 800px;
   position: relative;
@@ -810,25 +791,23 @@ background-color: #ffffff;
   margin-bottom: 20px;
 }
 
-#tulis-testimoni textarea:focus{
-  outline-color:rgb(129, 129, 170);
+#tulis-testimoni textarea:focus {
+  outline-color: rgb(129, 129, 170);
 }
 
-
-
-#nama-testimoni{
+#nama-testimoni {
   border: solid 0.1px rgb(214, 200, 200);
   border-radius: 5px;
   width: 40%;
 }
 
-#textarea-testimoni{
+#textarea-testimoni {
   border: solid 0.1px rgb(214, 200, 200);
   border-radius: 5px;
   width: 40%;
 }
 
-#tulis-testimoni .btn-kirim{
+#tulis-testimoni .btn-kirim {
   background-color: rgb(94, 94, 246);
   position: relative;
   left: 85.6%;
@@ -840,17 +819,17 @@ background-color: #ffffff;
   transition: 0.3s all ease-in-out;
 }
 
-#tulis-testimoni .alert{
+#tulis-testimoni .alert {
   width: 800px;
   margin: auto;
 }
 
- #tulis-testimoni .btn-kirm:hover{
+#tulis-testimoni .btn-kirm:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 5px black ;
- }
+  box-shadow: 0 0 5px black;
+}
 
-#tulis-testimoni .btn-loading{
+#tulis-testimoni .btn-loading {
   background-color: rgb(94, 94, 246);
   position: relative;
   left: 78.9%;
@@ -861,32 +840,26 @@ background-color: #ffffff;
   cursor: pointer;
   transition: 0.3s all ease-in-out;
 }
- 
 
 /* akhir testimoni-page.html */
 
-
-
 /* akhir testimoni */
-
 
 /* ------------------------------------------------------------------------------------ */
 
-
-
 /* galeri */
-#galeri{
-  min-height: 230vh;
+#galeri {
+  min-height: 220vh;
   padding-top: 6rem;
 }
 
-#galeri .container h2{
+#galeri .container h2 {
   font-weight: bold;
   padding-bottom: 3rem;
 }
 
-#galeri p{
-  font-family: 'work sans', sans-serif;
+#galeri p {
+  font-family: "work sans", sans-serif;
 }
 
 #galeri .container h2 {
@@ -907,7 +880,7 @@ background-color: #ffffff;
   left: calc(50% - 60px);
 }
 
- #galeri .container h2::after {
+#galeri .container h2::after {
   content: "";
   position: absolute;
   display: block;
@@ -918,89 +891,351 @@ background-color: #ffffff;
   left: calc(50% - 20px);
 }
 
-
-
-
-#galeri .carousel-caption p{
+#galeri .carousel-caption p {
   color: rgb(255, 255, 255);
   font-weight: 400;
   background-color: rgba(12, 11, 11, 0.474);
   border-radius: 5px 5px 5px 5px;
 }
 
+/* img & lightbox*/
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
 
-#galeri .card{
-  height: 20rem;
-  overflow: hidden;
+.gallery_container {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.gallery_container .gallery_item {
   cursor: pointer;
-  box-shadow: 0 0 6px rgb(56, 52, 52);
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery_container .gallery_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.gallery_container .gallery_item figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: bold;
+  opacity: 0;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.gallery_container .img_caption {
+  position: relative;
+  transform: translate(-0%, -100%);
+  text-align: center;
   color: white;
-  transition: all 0.2s ease-in-out;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.549);
+  backdrop-filter: blur(5px);
 }
 
-
-
-#galeri .card:hover{
-  transform: scale(1.1);
-  box-shadow: 0px 0px 5px rgb(26, 25, 25);
+.gallery_container .img_caption h6 {
+  position: relative;
+  font-size: 20px;
+  text-align: end;
+  padding: 5px;
+  border-radius: 5px;
 }
 
-
-#galeri .card-body{
-  /* background-image:url("img/galeri/bg_galeri2.png");
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-attachment:scroll; */
-  background: linear-gradient(45deg, #080808, #02387f, rgba(254, 4, 4, 0.844));
-  animation: background-color 5s ease infinite;
-  background-size: 400% 400%;
-  color: rgb(255, 255, 255);
+.gallery_container .gallery_item:hover img {
+  filter: brightness(0.5);
+  transform: scale(1.2);
 }
-@keyframes background-color {
-  0% {
-    background-position: 0% 50%;
+
+.gallery_container .gallery_item:hover figcaption {
+  opacity: 1;
+}
+
+.gallery_container .gallery_item:hover .img_caption {
+  opacity: 0;
+}
+
+.gallery_container .gallery_item.item_1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.gallery_container .gallery_item.item_2 {
+  grid-column-start: 5;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.gallery_container .gallery_item.item_3 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.gallery_container .gallery_item.item_4 {
+  grid-column-start: 5;
+  grid-column-end: 10;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.gallery_container .gallery_item.item_5 {
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 6;
+  grid-row-end: 12;
+}
+
+@media (max-width: 600px) {
+  .gallery_container {
+    grid-gap: 0.5em;
   }
-  50% {
-    background-position: 100% 50%;
+
+  .gallery_container .gallery_item figcaption {
+    font-size: 0.8rem;
+  }
+
+  .gallery_container .gallery_item.item_1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .gallery_container .gallery_item.item_2 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .gallery_container .gallery_item.item_3 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 11;
+  }
+
+  .gallery_container .gallery_item.item_4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  }
+  .gallery_container .gallery_item.item_5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 9;
+    grid-row-end: 14;
+  }
+  .gallery_container .gallery_item.item_6 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 11;
+    grid-row-end: 12;
+  }
+  .gallery_container .gallery_item.item_7 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 12;
+    grid-row-end: 14;
+  }
+
+  .gallery_container .img_caption {
+    display: none;
+  }
+}
+
+@media (max-width: 423px) {
+  .gallery_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery_container .img_caption {
+    display: none;
+  }
+}
+
+.lightbox_container {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000c0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: scale(0.5);
+  opacity: 0%;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.lightbox_container.show {
+  transform: scale(1);
+  opacity: 100%;
+  visibility: visible;
+}
+
+.lightbox_container #close {
+  color: #ffffff;
+  z-index: 3;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0.25em 0.4em;
+  border-radius: 5px;
+  transform: scale(1.7);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lightbox_container #close:hover {
+  background-color: #dfdfdf6c;
+}
+
+.lightbox_container #close:active {
+  background-color: rgb(0, 0, 0);
+  transition: 0s !important;
+}
+
+.lightbox_container .parent_navigation {
+  position: static;
+  z-index: 3;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lightbox_container .parent_navigation #ripple {
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 0.8em;
+  margin: 4rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.lightbox_container .parent_navigation #ripple:hover {
+  background-color: #dfdfdf6c;
+}
+
+.lightbox_container .parent_navigation #ripple span {
+  position: absolute;
+  background-color: #dfdfdf6c;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: anim 1s;
+  border-radius: 50%;
+}
+
+@keyframes anim {
+  0% {
+    height: 0px;
+    width: 0px;
+    opacity: 100%;
   }
   100% {
-    background-position: 0% 50%;
+    height: 500px;
+    width: 500px;
+    opacity: 0%;
   }
-
 }
 
-
-
-#galeri .card-body h5{
-  font-size: 16px;
+.lightbox_container .lightbox_item {
+  position: absolute;
+  height: auto;
+  width: 70%;
+  transition: 0.3s ease-in;
 }
 
+.lightbox_container .lightbox_item.active {
+  opacity: 0;
+}
 
-.btn-galeri{
+.lightbox_container .lightbox_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lightbox_container .lightbox_item figcaption {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding-top: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .lightbox_container .lightbox_item {
+    width: 83%;
+  }
+  .lightbox_container .parent_navigation #ripple {
+    margin: 0rem;
+    padding: 0.4em;
+  }
+}
+
+@media (max-width: 423px) {
+  .lightbox_container #close {
+    top: 18rem;
+  }
+}
+
+/* img & lightbox*/
+
+.btn-galeri {
   position: relative;
   font-size: 25px;
   top: 50px;
   padding: 10px;
-  left:53.6rem;
+  left: 53.6rem;
   text-decoration: none;
   background-color: rgb(99, 99, 202);
   width: 50%;
-  border-radius:5px;
+  border-radius: 5px;
   color: white;
   box-shadow: 0 0 5px rgb(76, 69, 69);
 }
 
-.btn-galeri:hover{
+.btn-galeri:hover {
   transform: scale(1.1);
   color: white;
   box-shadow: 0px 0px 9px rgb(50, 48, 48);
 }
 
 /* pagination */
-.pagination-container{
+.pagination-container {
   position: fixed;
-  top:20px ;
-  
+  top: 20px;
 }
 /* akhir pagination */
 
@@ -1009,70 +1244,66 @@ background-color: #ffffff;
 /* ----------------------------------------------------------------------------- */
 
 /* kontak */
-#kontak{
-  min-height: 700px;  
+#kontak {
+  margin-top: 100px;
+  min-height: 700px;
   padding-top: 40px;
   background-color: hwb(0 4% 96% / 0.82);
   color: white;
   backdrop-filter: blur(10px);
 }
 
-#kontak hr{
+#kontak hr {
   border: 1px solid white;
 }
 
-
-#kontak .kontak_pribadi{
+#kontak .kontak_pribadi {
   margin-left: 5rem;
 }
-#kontak .sosmed{
+#kontak .sosmed {
   padding-top: 2rem;
   margin-left: 5rem;
 }
-#kontak .alamat{
+#kontak .alamat {
   padding-top: 2rem;
   margin-left: 5rem;
 }
-
-
 
 /* akhir kontak */
 
-
 /* ------------------------------------------------------------------------------ */
 
 /* ------------------------------------------------------------------------------ */
-
 
 /* widget whatsapp */
-#btn-whatsapp{
-  position:fixed;
+#btn-whatsapp {
+  position: fixed;
   bottom: 70px;
   right: 17px;
   border: none;
   border-width: 20px;
   border-radius: 10px;
-  background-color: #25D366;
+  background-color: #25d366;
   padding-top: 5px;
   padding-bottom: 5px;
   transition: 0.3s all ease-in-out;
 }
 
-#btn-whatsapp a{
+#btn-whatsapp a {
   text-decoration: none;
   color: white;
   font-weight: 600;
-  font-family:arial;
+  font-family: arial;
+  padding: 5px;
 }
 
-#btn-whatsapp:hover{
+#btn-whatsapp:hover {
   color: white;
   transform: scale(1.1);
-  box-shadow: 0px 0px 5px #25D366;
-  
+  box-shadow: 0px 0px 5px #25d366;
 }
 
-#btn-whatsapp img{
+#btn-whatsapp img {
   width: 40px;
 }
 
@@ -1085,7 +1316,7 @@ background-color: #ffffff;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  display: none ;
+  display: none;
   z-index: 999;
 }
 
@@ -1098,557 +1329,508 @@ background-color: #ffffff;
   transform: rotate(360deg);
 }
 
-
-
-
 /* akhir button */
 
 /* --------------------------------------------------------------- */
 
-
-
 /* akhir tampilan desktop */
-
-
 
 /* -----------------------------------------//----------------------------------------------- */
 
-
 /* tampilan mobile */
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   /* tampilan mobile */
 
   /* ------------------------------------------------------------ */
 
-/* navbar */
-html, body{
-font-size: 12px;
-}
-.navbar-brand img{
-  width: 200px;
-  margin-left: 5px;
-}
-
-.navbar-toggler span i{
-  font-size: 26px;
-  color: black;
-}
-
-.navbar-toggler span{
-  position: relative;
-  display: block;
-  font-size: 15px;
-  z-index: 1;
-}
-
-.navbar-nav a{
-  font-size: 12px;
-  padding: 5px;
-}
-/* akhir navbar */
-
-/* ----------------------------------------------------------------------------------- */
-
-/* jumbotron */
-.jumbotron{
-  margin-top: 6rem;
-  padding-top: 6rem;
-  min-height:200px;
-  color: white;
-  background: linear-gradient(45deg, #f8f1cd, #3776dc,rgb(150, 0, 0));
-  animation: background-color 5s ease infinite;
-  background-size: 400% 400%;
-  color: rgb(0, 0, 0);
-}
-@keyframes background-color {
-  0% {
-    background-position: 0% 40%;
+  /* navbar */
+  html,
+  body {
+    font-size: 12px;
   }
-  50% {
-    background-position: 50% 50%;
+  .navbar-brand img {
+    width: 200px;
+    margin-left: 5px;
   }
-  100% {
-    background-position: 0% 50%;
+
+  .navbar-toggler span i {
+    font-size: 26px;
+    color: black;
   }
-}
-.jumbotron h2{
-font-size: 16px;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-font-weight: 600;
-margin-left: -10px;
-color: white;
-}
-.jumbotron h1{
-padding:0px;
-font-size: 32px;
-font-family: 'Mitr', sans-serif;
-margin-bottom: 0;
-margin-left: -10px;
-
-}
-
-.jumbotron p{
-  font-size: 8px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #c7c7c7;
-  font-weight: 300;
-  margin-left: -10px;
-}
-/* akhir jumbotron  */
-
-/* -------------------------------------------------------------- */
-
-/* teks berjalan */
-
-.teks-berjalan{
-  font-size: 14px;
-  padding: 8px;
-}
-/* akhir  teks berjalan */
-
-/* -------------------------------------------------------------- */
-
-/* tentang */
-#tentang .container{
-  min-height: 90rem;
-}
-
-#tentang .visi, .misi{
-  font-size: 10px;
-  display:grid;
-}
-
-.col-6 {
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.visi p{
-  margin-top: -150px;
-}
-
-.misi h4{
-margin-bottom: 15px;
-}
-
-
-
-/* akhir tentang */
-
-/* ------------------------------------------------------------ */
-
-
-/* kursus */
-#kursus{
-  min-height: 180rem;
-}
-
-#kursus .status-kursus{
-  font-size: 20px;
-  position: relative;
-  left: 70px;
-  margin-bottom: 50px;
-}
-
-.jumbotron-kursus{
-  padding: 30px;
-  padding-top: 0px;
-  margin: 5px;
-  margin-top: 6rem;
-}
-
-.jumbotron-kursus h1{
- padding-top: 50px;
- font-size: 30px;
-}
-
-.jumbotron-kursus p{
- font-size: 14px;
-}
-
-
-.jumbotron-kursus-jumbotron{
-  transition: all 5s ease-in-out;
-}
-
-.btn-kursus-jumbotron:hover{
-  transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(112, 107, 107, 0.643);
-}
-
-#kursus .card{
-  width: 250px;
-  height: 360px;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px #5e5c5c;
-  overflow: hidden;
-}
-
-#kursus .kursus-card img{
-  height: 18rem;
-}
-
-#kursus .kursus-card{
-  margin-right: auto;
-  margin-left: auto;
-  gap: 50px;
-  justify-content: center;
-  display: grid;
-}
-
-#kursus .card p{
-  font-size: 10px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  
-}
-
-
-
-
-#kursus .card.card_4{
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  height: 200px;
-  margin-bottom: 90px;
-}
-
-#kursus .btn-kursus-page{
-  position: relative;
-  left: 290px;
-  font-size: 12px;
-}
-
-.text-berjalan-kursus{
-  font-size: 14px;
-  padding: 8px;
-}
-
-
-
-/* card kursus-page.html */
-
-.status-kursus-page{
-  font-size: 18px;
-  left: 5px;
-  position: relative;
-  margin-bottom: 50px;
-}
-
-
-.card-1, .card-2, .card-3{
-  width: 320px;
-}
-
-.card-1 img{
-  left: -30px;
- top: 50px;
-  width: 100px;
-}
-
-.card-1 h5 {
-  font-size:16px;
-  bottom: 70px;
-  left: 100px;
-}
-
-.card-1 p{ 
-  width: 200px;
-  top: -60px;
-  left: 100px;
-  font-size: 9px;
-}
-
-.card-1 a{
-  font-size: 12px;
-  top: -50px;
-  left: 100px;
-}
-
-.card-2 img{
-  left: -30px;
- top: 50px;
-  width: 100px;
-}
-
-.card-2 h5 {
-  font-size:16px;
-  bottom: 70px;
-  left: 100px;
-}
-
-.card-2 p{ 
-  width: 200px;
-  top: -60px;
-  left: 100px;
-  font-size: 9px;
-}
-
-.card-2 a{
-  font-size: 12px;
-  top: -50px;
-  left: 100px;
-}
-
-.card-3 img{
-  left: -30px;
- top: 50px;
-  width: 100px;
-}
-
-.card-3 h5 {
-  font-size:16px;
-  bottom: 70px;
-  left: 100px;
-}
-
-.card-3 p{ 
-  width: 200px;
-  top: -60px;
-  left: 100px;
-  font-size: 9px;
-}
-
-.card-3 a{
-  font-size: 12px;
-  top: -50px;
-  left: 100px;
-}
-
-.jadwal-kursus{
-  margin-bottom: 90px;
-}
-
-.to-kursus-page{
- left: 0.1px;
- margin-bottom: 8rem;
-}
-
-
-
-
-
-/* akhir card kursus-page.html */
-
-/* akhir kursus */
-
-/* ------------------------------------------------------------------- */
-
-/* testimoni */
-#testimoni{
-  margin: 5px;
-  color: black;
-  background: none;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-#testimoni .testimoni-img{
-  width: 130px;
-}
-
-#testimoni .carousel-item h4{
-  color: black;
-  font-size: 10px;
-  line-height: 1.375em;
-  width: auto;
-  font-weight:500;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  vertical-align: middle;
-  margin: 70px 0;
-}
-
-#testimoni .container h2{
-  color: black;
-  font-size: 24px;
-}
-
-#testimoni .container h2::after{
-  background-color: #434edf;
-}
-
-#testimoni .carousel-indicators button{
-  background-color: rgba(104, 59, 59, 0.653);
-  border-radius: 100%;
-  height: 10px;
-  width: 8px; 
-}
-
-
-#testimoni .btn-testimoni{
-  position: relative;
-  left: 250px;
-  bottom: -70px;  
-  font-size: 12px;
-}
-
-
-/* testimoni-page.html  */
-
-
-#tulis-testimoni{
-  width: 380px;
-  margin: auto;
-}
-#tulis-testimoni h2{
-  text-align: center;
-  margin-bottom: 30px;
-  position: relative;
-  bottom: 10px;
-  font-size: 25px;
-}
-
-#tulis-testimoni label{
-  text-align: start;
-  font-size: 14px;
-  font-family: "work sans", sans-serif;
-  font-weight: 400;
-  left: 30px;
-}
-
-#tulis-testimoni input{
-  width: 300px;
-  left: 30px;
-}
-
-#tulis-testimoni textarea{
-  width: 300px;
-  left: 30px;
-}
-
-#nama-testimoni{
-  border: solid 0.1px rgb(214, 200, 200);
-  border-radius: 5px;
-  width: 60%;
-}
-
-#textarea-testimoni{
-  border: solid 0.1px rgb(214, 200, 200);
-  border-radius: 5px;
-  width: 60%;
-}
-
-
-#tulis-testimoni .alert{
-  width: 300px;
-}
-
-#tulis-testimoni .btn-kirim{
-  left: 83%;
-}
-
-#tulis-testimoni .btn-loading{
-  left: 71%;
-}
-/* akhir testimoni-page.html */
-
-
-/* akhir testimoni  */
-
-/* ----------------------------------------------------------------- */
-
-/* galeri  */
-#galeri .galeri-card .card{
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: center;
-}
-
-#galeri .card{
-  width: 300px;
-  height: 255px;
-}
-
-#galeri .card-body h5{
-  font-size: 12px;
-}
-
-#galeri .card-body p{
-  font-size: 12px;
-}
-
-#galeri .btn-galeri{
-  position: relative;
-  left: 270px;
-  font-size: 12px;
-  padding: 5px;
-  margin-bottom: 5px;
-}
-
-
-
-
-/* akhir galeri */
-
-/* ----------------------------------------------------------------- */
-
-
-/* kontak & footer*/
-#kontak{
-  margin-top: 10rem;
-  padding-top: 0px;
-}
-
-#kontak .kontak_pribadi{
-  margin-left: -10px;
-  font-size: 14px;
-}
-
-#kontak .sosmed{
-  margin-left: -10px;
-  font-size: 14px;
-}
-
-#kontak .alamat{
-  margin-left: -10px;
-  font-size: 14px;
-}
-
-#kontak .alamat iframe{
-  width: 100%;
-  height: 300px;
-}
-
-/* footer */
-.footer{
-margin-left: -20px;
- justify-content: center;
-}
-/* akhir footer */
-
-
-/* kontak & footer */
-
-/* --------------------------------------------------------------- */
-
-
-/* widged whatsapp & back to top */
-#btn-whatsapp{
-  box-shadow: 0 0 10px rgb(60, 54, 54);
-}
-
-#btn-whatsapp img{
-  width: 20px;
-}
-#btn-whatsapp a{
-  font-size: 14px;
-}
-
-.to-top{
-  bottom: 30px;
-}
-.to-top img{
-  width: 30px;
-}
-
-
-/* akhir widged whatsapp & back to top */
-
-/* ---------------------------------------------------------------- */
+
+  .navbar-toggler span {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    z-index: 1;
+  }
+
+  .navbar-nav a {
+    font-size: 12px;
+    padding: 5px;
+  }
+  /* akhir navbar */
+
+  /* ----------------------------------------------------------------------------------- */
+
+  /* jumbotron */
+  .jumbotron {
+    margin-top: 6rem;
+    padding-top: 6rem;
+    min-height: 200px;
+    color: white;
+    background: linear-gradient(45deg, #f8f1cd, #3776dc, rgb(150, 0, 0));
+    animation: background-color 5s ease infinite;
+    background-size: 400% 400%;
+    color: rgb(0, 0, 0);
+  }
+  @keyframes background-color {
+    0% {
+      background-position: 0% 40%;
+    }
+    50% {
+      background-position: 50% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .jumbotron h2 {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    margin-left: -10px;
+    color: white;
+  }
+  .jumbotron h1 {
+    padding: 0px;
+    font-size: 32px;
+    font-family: "Mitr", sans-serif;
+    margin-bottom: 0;
+    margin-left: -10px;
+  }
+
+  .jumbotron p {
+    font-size: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c7c7c7;
+    font-weight: 300;
+    margin-left: -10px;
+  }
+  /* akhir jumbotron  */
+
+  /* -------------------------------------------------------------- */
+
+  /* teks berjalan */
+
+  .teks-berjalan {
+    font-size: 14px;
+    padding: 8px;
+  }
+  /* akhir  teks berjalan */
+
+  /* -------------------------------------------------------------- */
+
+  /* tentang */
+  #tentang .container {
+    min-height: 90rem;
+  }
+
+  #tentang .visi,
+  .misi {
+    font-size: 10px;
+    display: grid;
+  }
+
+  .col-6 {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .visi p {
+    margin-top: -150px;
+  }
+
+  .misi h4 {
+    margin-bottom: 15px;
+  }
+
+  /* akhir tentang */
+
+  /* ------------------------------------------------------------ */
+
+  /* kursus */
+  #kursus {
+    min-height: 180rem;
+  }
+
+  #kursus .status-kursus {
+    font-size: 20px;
+    position: relative;
+    left: 70px;
+    margin-bottom: 50px;
+  }
+
+  .jumbotron-kursus {
+    padding: 30px;
+    padding-top: 0px;
+    margin: 5px;
+    margin-top: 6rem;
+  }
+
+  .jumbotron-kursus h1 {
+    padding-top: 50px;
+    font-size: 30px;
+  }
+
+  .jumbotron-kursus p {
+    font-size: 14px;
+  }
+
+  .jumbotron-kursus-jumbotron {
+    transition: all 5s ease-in-out;
+  }
+
+  .btn-kursus-jumbotron:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(112, 107, 107, 0.643);
+  }
+
+  #kursus .card {
+    width: 250px;
+    height: 360px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #5e5c5c;
+    overflow: hidden;
+  }
+
+  #kursus .kursus-card img {
+    height: 18rem;
+  }
+
+  #kursus .kursus-card {
+    margin-right: auto;
+    margin-left: auto;
+    gap: 50px;
+    justify-content: center;
+    display: grid;
+  }
+
+  #kursus .card p {
+    font-size: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  #kursus .card.card_4 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 200px;
+    margin-bottom: 90px;
+  }
+
+  #kursus .btn-kursus-page {
+    position: relative;
+    left: 290px;
+    font-size: 12px;
+  }
+
+  .text-berjalan-kursus {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  /* card kursus-page.html */
+
+  .status-kursus-page {
+    font-size: 18px;
+    left: 5px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: 320px;
+  }
+
+  .card-1 img {
+    left: -30px;
+    top: 50px;
+    width: 100px;
+  }
+
+  .card-1 h5 {
+    font-size: 16px;
+    bottom: 70px;
+    left: 100px;
+  }
+
+  .card-1 p {
+    width: 200px;
+    top: -60px;
+    left: 100px;
+    font-size: 9px;
+  }
+
+  .card-1 a {
+    font-size: 12px;
+    top: -50px;
+    left: 100px;
+  }
+
+  .card-2 img {
+    left: -30px;
+    top: 50px;
+    width: 100px;
+  }
+
+  .card-2 h5 {
+    font-size: 16px;
+    bottom: 70px;
+    left: 100px;
+  }
+
+  .card-2 p {
+    width: 200px;
+    top: -60px;
+    left: 100px;
+    font-size: 9px;
+  }
+
+  .card-2 a {
+    font-size: 12px;
+    top: -50px;
+    left: 100px;
+  }
+
+  .card-3 img {
+    left: -30px;
+    top: 50px;
+    width: 100px;
+  }
+
+  .card-3 h5 {
+    font-size: 16px;
+    bottom: 70px;
+    left: 100px;
+  }
+
+  .card-3 p {
+    width: 200px;
+    top: -60px;
+    left: 100px;
+    font-size: 9px;
+  }
+
+  .card-3 a {
+    font-size: 12px;
+    top: -50px;
+    left: 100px;
+  }
+
+  .jadwal-kursus {
+    margin-bottom: 90px;
+  }
+
+  .to-kursus-page {
+    left: 0.1px;
+    margin-bottom: 8rem;
+  }
+
+  /* akhir card kursus-page.html */
+
+  /* akhir kursus */
+
+  /* ------------------------------------------------------------------- */
+
+  /* testimoni */
+  #testimoni {
+    margin: 5px;
+    color: black;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  #testimoni .testimoni-img {
+    width: 130px;
+  }
+
+  #testimoni .carousel-item h4 {
+    color: black;
+    font-size: 10px;
+    line-height: 1.375em;
+    width: auto;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    vertical-align: middle;
+    margin: 70px 0;
+  }
+
+  #testimoni .container h2 {
+    color: black;
+    font-size: 24px;
+  }
+
+  #testimoni .container h2::after {
+    background-color: #434edf;
+  }
+
+  #testimoni .carousel-indicators button {
+    background-color: rgba(104, 59, 59, 0.653);
+    border-radius: 100%;
+    height: 10px;
+    width: 8px;
+  }
+
+  #testimoni .btn-testimoni {
+    position: relative;
+    left: 250px;
+    bottom: -70px;
+    font-size: 12px;
+  }
+
+  /* testimoni-page.html  */
+
+  #tulis-testimoni {
+    width: 380px;
+    margin: auto;
+  }
+  #tulis-testimoni h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 10px;
+    font-size: 25px;
+  }
+
+  #tulis-testimoni label {
+    text-align: start;
+    font-size: 14px;
+    font-family: "work sans", sans-serif;
+    font-weight: 400;
+    left: 30px;
+  }
+
+  #tulis-testimoni input {
+    width: 300px;
+    left: 30px;
+  }
+
+  #tulis-testimoni textarea {
+    width: 300px;
+    left: 30px;
+  }
+
+  #nama-testimoni {
+    border: solid 0.1px rgb(214, 200, 200);
+    border-radius: 5px;
+    width: 60%;
+  }
+
+  #textarea-testimoni {
+    border: solid 0.1px rgb(214, 200, 200);
+    border-radius: 5px;
+    width: 60%;
+  }
+
+  #tulis-testimoni .alert {
+    width: 300px;
+  }
+
+  #tulis-testimoni .btn-kirim {
+    left: 83%;
+  }
+
+  #tulis-testimoni .btn-loading {
+    left: 71%;
+  }
+  /* akhir testimoni-page.html */
+
+  /* akhir testimoni  */
+
+  /* ----------------------------------------------------------------- */
+
+  /* galeri  */
+  #galeri {
+    min-height: 200vh;
+  }
+  #galeri .btn-galeri {
+    position: relative;
+    left: 260px;
+    font-size: 12px;
+    padding: 5px;
+    top: 1rem;
+  }
+
+  /* akhir galeri */
+
+  /* ----------------------------------------------------------------- */
+
+  /* kontak & footer*/
+  #kontak {
+    padding-top: 0px;
+  }
+
+  #kontak .kontak_pribadi {
+    margin-left: -10px;
+    font-size: 14px;
+  }
+
+  #kontak .sosmed {
+    margin-left: -10px;
+    font-size: 14px;
+  }
+
+  #kontak .alamat {
+    margin-left: -10px;
+    font-size: 14px;
+  }
+
+  #kontak .alamat iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* footer */
+  .footer {
+    margin-left: -20px;
+    justify-content: center;
+  }
+  /* akhir footer */
+
+  /* kontak & footer */
+
+  /* --------------------------------------------------------------- */
+
+  /* widged whatsapp & back to top */
+  #btn-whatsapp {
+    box-shadow: 0 0 10px rgb(60, 54, 54);
+  }
+
+  #btn-whatsapp img {
+    width: 20px;
+  }
+  #btn-whatsapp a {
+    font-size: 14px;
+  }
+
+  .to-top {
+    bottom: 30px;
+  }
+  .to-top img {
+    width: 30px;
+  }
+
+  /* akhir widged whatsapp & back to top */
+
+  /* ---------------------------------------------------------------- */
 }
 
 /* akhir tampilan mobile */
