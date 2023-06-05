@@ -1690,7 +1690,7 @@ tbody tr {
 
   /* galeri  */
   #galeri {
-    min-height: 200vh;
+    min-height: 100vh;
   }
   #galeri .btn-galeri {
     position: relative;
