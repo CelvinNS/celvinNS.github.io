@@ -404,7 +404,7 @@ tbody tr {
 #kursus .btn-kursus-page {
   position: relative;
   margin-top: 20px;
-  left: 58rem;
+  left: 90%;
   text-decoration: none;
   background-color: rgb(99, 99, 202);
   padding: 5px;
@@ -766,18 +766,20 @@ tbody tr {
   font-family: "work sans", sans-serif;
   font-weight: 500;
   position: relative;
-  left: 80px;
+  left: 7.5%;
 }
 
 #tulis-testimoni h2 {
-  font-size: 32px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 #tulis-testimoni input {
+  display: flex;
+  margin: auto;
   box-shadow: 0 0 2px rgb(144, 144, 144);
-  width: 800px;
+  width: 85%;
   position: relative;
-  left: 80px;
 }
 #tulis-testimoni input:focus {
   outline-color: rgb(143, 143, 216);
@@ -785,9 +787,10 @@ tbody tr {
 
 #tulis-testimoni textarea {
   box-shadow: 0 0 2px rgb(112, 108, 108);
-  width: 800px;
+  width: 85%;
   position: relative;
-  left: 80px;
+  display: flex;
+  margin: auto;
   margin-bottom: 20px;
 }
 
@@ -810,7 +813,8 @@ tbody tr {
 #tulis-testimoni .btn-kirim {
   background-color: rgb(94, 94, 246);
   position: relative;
-  left: 85.6%;
+  width: 100px;
+  left: 82%;
   border: none;
   border-radius: 5px;
   color: white;
@@ -820,8 +824,9 @@ tbody tr {
 }
 
 #tulis-testimoni .alert {
-  width: 800px;
   margin: auto;
+  width: 800px;
+  margin-bottom: 10px;
 }
 
 #tulis-testimoni .btn-kirm:hover {
@@ -832,7 +837,8 @@ tbody tr {
 #tulis-testimoni .btn-loading {
   background-color: rgb(94, 94, 246);
   position: relative;
-  left: 78.9%;
+  width: 130px;
+  left: 79%;
   border: none;
   border-radius: 5px;
   color: white;
@@ -1005,77 +1011,6 @@ tbody tr {
   grid-row-end: 12;
 }
 
-@media (max-width: 600px) {
-  .gallery_container {
-    grid-gap: 0.5em;
-  }
-
-  .gallery_container .gallery_item figcaption {
-    font-size: 0.8rem;
-  }
-
-  .gallery_container .gallery_item.item_1 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 5;
-  }
-
-  .gallery_container .gallery_item.item_2 {
-    grid-column-start: 5;
-    grid-column-end: 10;
-    grid-row-start: 1;
-    grid-row-end: 5;
-  }
-
-  .gallery_container .gallery_item.item_3 {
-    grid-column-start: 5;
-    grid-column-end: 10;
-    grid-row-start: 5;
-    grid-row-end: 11;
-  }
-
-  .gallery_container .gallery_item.item_4 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: 9;
-  }
-  .gallery_container .gallery_item.item_5 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 9;
-    grid-row-end: 14;
-  }
-  .gallery_container .gallery_item.item_6 {
-    grid-column-start: 5;
-    grid-column-end: 10;
-    grid-row-start: 11;
-    grid-row-end: 12;
-  }
-  .gallery_container .gallery_item.item_7 {
-    grid-column-start: 5;
-    grid-column-end: 10;
-    grid-row-start: 12;
-    grid-row-end: 14;
-  }
-
-  .gallery_container .img_caption {
-    display: none;
-  }
-}
-
-@media (max-width: 423px) {
-  .gallery_container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .gallery_container .img_caption {
-    display: none;
-  }
-}
-
 .lightbox_container {
   width: 100%;
   height: 100vh;
@@ -1201,12 +1136,6 @@ tbody tr {
   .lightbox_container .parent_navigation #ripple {
     margin: 0rem;
     padding: 0.4em;
-  }
-}
-
-@media (max-width: 423px) {
-  .lightbox_container #close {
-    top: 18rem;
   }
 }
 
@@ -1340,8 +1269,6 @@ tbody tr {
 /* tampilan mobile */
 
 @media only screen and (max-width: 768px) {
-  /* tampilan mobile */
-
   /* ------------------------------------------------------------ */
 
   /* navbar */
@@ -1380,7 +1307,7 @@ tbody tr {
     padding-top: 6rem;
     min-height: 200px;
     color: white;
-    background: linear-gradient(45deg, #f8f1cd, #3776dc, rgb(150, 0, 0));
+    background: linear-gradient(45deg, #2f43a6, #051a70, rgb(255, 0, 0));
     animation: background-color 5s ease infinite;
     background-size: 400% 400%;
     color: rgb(0, 0, 0);
@@ -1390,7 +1317,7 @@ tbody tr {
       background-position: 0% 40%;
     }
     50% {
-      background-position: 50% 50%;
+      background-position: 50% 45%;
     }
     100% {
       background-position: 0% 50%;
@@ -1412,7 +1339,7 @@ tbody tr {
   }
 
   .jumbotron p {
-    font-size: 8px;
+    font-size: 9px;
     font-family: Arial, Helvetica, sans-serif;
     color: #c7c7c7;
     font-weight: 300;
@@ -1471,6 +1398,12 @@ tbody tr {
     position: relative;
     left: 70px;
     margin-bottom: 50px;
+  }
+
+  .to-kursus-page {
+    position: relative;
+    left: -1%;
+    margin-bottom: 8rem;
   }
 
   .jumbotron-kursus {
@@ -1637,11 +1570,6 @@ tbody tr {
     margin-bottom: 90px;
   }
 
-  .to-kursus-page {
-    left: 0.1px;
-    margin-bottom: 8rem;
-  }
-
   /* akhir card kursus-page.html */
 
   /* akhir kursus */
@@ -1699,7 +1627,9 @@ tbody tr {
   /* testimoni-page.html  */
 
   #tulis-testimoni {
-    width: 380px;
+    position: relative;
+    top: -50px;
+    width: 300px;
     margin: auto;
   }
   #tulis-testimoni h2 {
@@ -1707,7 +1637,8 @@ tbody tr {
     margin-bottom: 30px;
     position: relative;
     bottom: 10px;
-    font-size: 25px;
+    font-weight: bold;
+    font-size: 20px;
   }
 
   #tulis-testimoni label {
@@ -1715,17 +1646,15 @@ tbody tr {
     font-size: 14px;
     font-family: "work sans", sans-serif;
     font-weight: 400;
-    left: 30px;
+    left: 28px;
   }
 
   #tulis-testimoni input {
-    width: 300px;
-    left: 30px;
+    width: 80%;
   }
 
   #tulis-testimoni textarea {
-    width: 300px;
-    left: 30px;
+    width: 80%;
   }
 
   #nama-testimoni {
@@ -1741,15 +1670,17 @@ tbody tr {
   }
 
   #tulis-testimoni .alert {
-    width: 300px;
+    width: 80%;
   }
 
   #tulis-testimoni .btn-kirim {
-    left: 83%;
+    width: 50px;
+    left: 70%;
   }
 
   #tulis-testimoni .btn-loading {
-    left: 71%;
+    width: 100px;
+    left: 51%;
   }
   /* akhir testimoni-page.html */
 
@@ -1832,6 +1763,86 @@ tbody tr {
 
   /* ---------------------------------------------------------------- */
 }
+
+/* lightbox galeri */
+@media (max-width: 600px) {
+  .gallery_container {
+    grid-gap: 0.5em;
+  }
+
+  .gallery_container .gallery_item figcaption {
+    font-size: 0.8rem;
+  }
+
+  .gallery_container .gallery_item.item_1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .gallery_container .gallery_item.item_2 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .gallery_container .gallery_item.item_3 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 11;
+  }
+
+  .gallery_container .gallery_item.item_4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  }
+  .gallery_container .gallery_item.item_5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 9;
+    grid-row-end: 14;
+  }
+  .gallery_container .gallery_item.item_6 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 11;
+    grid-row-end: 12;
+  }
+  .gallery_container .gallery_item.item_7 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 12;
+    grid-row-end: 14;
+  }
+
+  .gallery_container .img_caption {
+    display: none;
+  }
+}
+
+@media (max-width: 423px) {
+  .gallery_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery_container .img_caption {
+    display: none;
+  }
+}
+
+@media (max-width: 423px) {
+  .lightbox_container #close {
+    top: 18rem;
+  }
+}
+
+/* akhir lightbox galeri  */
 
 /* akhir tampilan mobile */
 
