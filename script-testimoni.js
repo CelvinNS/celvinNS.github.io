@@ -1,5 +1,5 @@
 // testimoni form 
-const scripSheet = 'https://script.google.com/macros/s/AKfycbyN0_G27rz0YEl-R9kvfdkW3gvGeqezVNLL_0E_9W6J5aJFCOGyh3hCDBuCYsrRFOqTcg/exec';
+const scripSheet = 'https://script.google.com/macros/s/AKfycbwBZ0qXCcExn2XItPWMAPV8JqrMGfxZaY3ktW4FcJ6ZaIsh1L2f8bF8AT1-H-xGemY3oQ/exec';
 const formTestimoni = document.forms['testimoni-peserta'];
 
 const kirimTestimoni = document.querySelector('.btn-kirim');
