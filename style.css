@@ -449,6 +449,7 @@ tbody tr {
 
 .jumbotron-kursus h1 {
   font-weight: 800;
+  width: 90%;
   font-size: 70px;
   color: rgb(234, 255, 0);
 }
@@ -464,6 +465,16 @@ tbody tr {
 .btn-kursus-jumbotron:hover {
   transform: scale(1.1);
   box-shadow: 0 0 10px rgba(112, 107, 107, 0.643);
+}
+
+.qrcode-kursus {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+}
+
+.qrcode-kursus img {
+  width: 400px;
 }
 /* akhir jumbotron kursus */
 
@@ -1309,7 +1320,7 @@ tbody tr {
     padding-top: 6rem;
     min-height: 200px;
     color: white;
-    background: linear-gradient(45deg, #2f43a6, #051a70, rgb(255, 0, 0));
+    background: linear-gradient(45deg, #1746e4, #0088ff, rgb(255, 0, 0));
     animation: background-color 5s ease infinite;
     background-size: 400% 400%;
     color: rgb(0, 0, 0);
@@ -1339,7 +1350,7 @@ tbody tr {
     font-family: "Mitr", sans-serif;
     position: relative;
     left: -13px;
-    background: linear-gradient(to right, #6a67ff, #f22738, #ff0000);
+    background: linear-gradient(to right, #3300ff, #b6051d, #ff0000);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1438,6 +1449,10 @@ tbody tr {
   .btn-kursus-jumbotron:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(112, 107, 107, 0.643);
+  }
+
+  .qrcode-kursus {
+    display: none;
   }
 
   #kursus .card {
