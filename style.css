@@ -398,9 +398,9 @@ tbody tr {
 /* btn kursus-page.html */
 #kursus .to-kursus-page {
   position: relative;
-  right: 30px;
+  right: 5rem;
   margin-top: 50px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 #kursus .btn-kursus-page {
@@ -781,7 +781,7 @@ tbody tr {
 #tulis-testimoni label {
   text-align: start;
   font-size: 22px;
-  font-family: "work sans", sans-serif;
+  font-family: Arial, Helvetica;
   font-weight: 500;
   position: relative;
   left: 7.5%;
