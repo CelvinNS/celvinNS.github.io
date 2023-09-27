@@ -131,7 +131,7 @@
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+              <span class="visually-hidden">Next</span> 
             </button>
           </div>  
 
@@ -149,43 +149,96 @@
 
     <!-- tulis testimoni -->
    
-    
+     <div class="container-testimoni">
+      <h3>FORM TESTIMONI </h3>
      
-      <section id="tulis-testimoni" style="margin-top: 5rem;">
-        <div> 
-            <h2 class="text-center">Berikan Testimoni</h2>
+      <div class="box-testimoni"> 
+        <form name="testimoni-peserta">
+
+          <!-- input nama -->
+          <div>
+            <label for="nama" class="form-label">Nama Lengkap*</label>
+            <input type="text" class="form-control" name="nama" id="input-nama">
+          </div>
+          
+
+          <div class="keterangan">
+            <p class="text-center" style="margin-top: 20px; font-family:sans-serif; font-weight: 600;" >Apa pendapat anda tentang Lembaga Pendidikan Kursus MEDIA CITRA MANDIRI
+              <br> Silahkan isi tabel di bawah ini dan berikan komentar/saran anda bagi kami!
+            </p>
+          </div>
+          <!-- tabel pertanyaan -->
+          <div class="mt-3">
+            <table class="table table-bordered tabel-testimoni">
+              <thead>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Uraian</th>
+                  <th scope="col">Tidak Baik</th>
+                  <th scope="col">Baik</th>
+                  <th scope="col">Sangat Baik</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th  casscope="row" class="text-center">1</th>
+                  <td>Bagaimana pendapat anda tentang materi yang anda dapatkan selama kursus di LPK MCM?</td>
+                  <td class="text-center"><input type="checkbox" name="pertanyaan 1" value="tidak baik"></td>
+                  <td class="text-center"><input type="checkbox" name="pertanyaan 1" value="baik"></td>
+                  <td class="text-center"><input type="checkbox" name="pertanyaan 1" value="sangat baik"></td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row" class="text-center">2</th>
+                  <td>Bagaimana pendapat anda tentang sikap para instruktur selama mengajar anda?</td>
+                  <td class="text-center"><input type="checkbox" name="pertanyaan 2" value="tidak baik"></td>
+                  <td class="text-center"><input type="checkbox" name="pertanyaan 2" value="baik"></td>
+                  <td class="text-center"><input type="checkbox" name="pertanyaan 2" value="sangat baik"></td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row" class="text-center">3</th>
+                  <td>Bagaimana pendapat anda tentang suasana didalam gedung LPK MCM?</td>
+                  <td class="text-center"><input type="checkbox" name="pertanyaan 3" value="tidak baik"></td>
+                  <td class="text-center"><input type="checkbox" name="pertanyaan 3" value="baik"></td>
+                  <td class="text-center"><input type="checkbox" name="pertanyaan 3" value="sangat baik"></td>
+                  
+                  
+                </tr>
+              
+              </tbody>
+            </table>
           </div>
 
-        <!-- Pesan sukses -->
-        <div class="alert alert-success  alert-dismissible fade show d-none" role="alert">
-          <strong>Terima Kasih!</strong> Testimoni anda sudah kami terima.
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-        <!-- akhir pesan sukses -->
-        
-          <form name="testimoni-peserta">
-            <div class="mb-3">
-              <label for="nama">Nama</label> <br>
-              <input id="nama-testimoni" type="nama" name="nama" id="nama">
-            </div>
-  
-            <div>
-              <label for="testimoni">Komentar/saran:</label><br>
-              <textarea id="textarea-testimoni" name="testimoni" rows="4" cols="50"></textarea><br>
-  
-              <button type="submit" class="btn-kirim">kirim</button>
-            </div>
-            
-  
-            <!-- button loading ketika dikirim -->
-            <button class="btn-loading d-none" type="button">
-              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-              Loading...
-            </button>
-  
-          </form>
-        
-      </section>
+          <!-- komentar dan saran -->
+          
+          <div>
+            <label for="testimoni" class="form-label">Komentar/saran</label>
+            <br>
+            <textarea name="testimoni" id="komentar" cols="30" rows="10"></textarea>
+            <button type="submit" class="btn btn-primary btn-kirim">kirim</button>
+
+                  <!-- button loading ketika dikirim -->
+                  <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                  </button>
+                  <!-- akhir button loading -->
+
+                   <!-- pesan sukses  -->
+                   <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+                    <strong>Terima Kasih! </strong> Testimoni anda sudah kami terima.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                  <!-- akhir pesan sukses --> 
+          </div>
+        </form>
+
+
+      </div>
+
+    </div>
 
 
    

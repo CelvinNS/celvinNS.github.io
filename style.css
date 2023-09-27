@@ -123,7 +123,7 @@ body {
 
 /* tentang */
 #tentang .container {
-  min-height: 165vh;
+  min-height: 100vh;
   padding-top: 2rem;
 }
 
@@ -769,100 +769,61 @@ tbody tr {
 
 /* testimoni-page.html  */
 
-#tulis-testimoni {
-  width: 1000px;
-  margin: auto;
-  background-color: rgb(255, 255, 255);
-  padding: 20px;
-  padding-top: 50px;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgb(151, 191, 231);
-}
-#tulis-testimoni label {
-  text-align: start;
-  font-size: 22px;
-  font-family: Arial, Helvetica;
-  font-weight: 500;
-  position: relative;
-  left: 7.5%;
+.container-testimoni {
+  margin-top: 150px;
+  justify-content: center;
+  align-items: center;
 }
 
-#tulis-testimoni h2 {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-#tulis-testimoni input {
-  display: flex;
-  margin: auto;
-  box-shadow: 0 0 2px rgb(144, 144, 144);
-  width: 85%;
-  position: relative;
-}
-#tulis-testimoni input:focus {
-  outline-color: rgb(143, 143, 216);
-}
-
-#tulis-testimoni textarea {
-  box-shadow: 0 0 2px rgb(112, 108, 108);
-  width: 85%;
-  position: relative;
-  display: flex;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-#tulis-testimoni textarea:focus {
-  outline-color: rgb(129, 129, 170);
-}
-
-#nama-testimoni {
-  border: solid 0.1px rgb(214, 200, 200);
-  border-radius: 5px;
-  width: 40%;
-}
-
-#textarea-testimoni {
-  border: solid 0.1px rgb(214, 200, 200);
-  border-radius: 5px;
-  width: 40%;
-}
-
-#tulis-testimoni .btn-kirim {
-  background-color: rgb(94, 94, 246);
-  position: relative;
-  width: 100px;
-  left: 82%;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  box-shadow: 0 0 3px black;
-  cursor: pointer;
-  transition: 0.3s all ease-in-out;
-}
-
-#tulis-testimoni .alert {
-  margin: auto;
-  width: 800px;
+.container-testimoni h3 {
+  font-weight: 600;
+  text-align: center;
   margin-bottom: 10px;
 }
 
-#tulis-testimoni .btn-kirm:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 5px black;
+.box-testimoni {
+  display: flex;
+  margin: auto;
+  padding: 30px;
+  justify-content: center;
+  width: 900px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgb(45, 44, 44);
 }
 
-#tulis-testimoni .btn-loading {
-  background-color: rgb(94, 94, 246);
-  position: relative;
-  width: 130px;
-  left: 79%;
+#input-nama {
+  width: 500px;
+  background: rgb(251, 247, 247);
   border: none;
   border-radius: 5px;
-  color: white;
-  box-shadow: 0 0 3px black;
-  cursor: pointer;
-  transition: 0.3s all ease-in-out;
+  box-shadow: 0 0 2px rgb(28, 27, 27);
+}
+
+.form-label {
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.table.tabel-testimoni {
+  border: 1px solid rgb(154, 148, 148);
+  padding: 5px;
+}
+
+.tabel-testimoni thead tr {
+  background: rgb(245, 234, 22);
+  color: black;
+  text-align: center;
+}
+
+#komentar {
+  width: 100%;
+}
+
+.box-testimoni .alert {
+  position: relative;
+  display: flex;
+  width: 700px;
+  margin-top: 5px;
 }
 
 /* akhir testimoni-page.html */
@@ -1655,62 +1616,53 @@ tbody tr {
 
   /* testimoni-page.html  */
 
-  #tulis-testimoni {
-    position: relative;
-    top: -50px;
-    width: 300px;
+  .container-testimoni {
+    margin-top: 50px;
+  }
+
+  .box-testimoni {
+    width: 350px;
     margin: auto;
   }
-  #tulis-testimoni h2 {
+  #input-nama {
+    width: 200px;
+    background: rgb(251, 247, 247);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgb(28, 27, 27);
+  }
+
+  .keterangan p {
+    font-size: 10px;
+  }
+
+  .form-label {
+    font-weight: 600;
+    margin-top: 30px;
+  }
+
+  .table.tabel-testimoni {
+    border: 1px solid rgb(154, 148, 148);
+    padding: 5px;
+  }
+
+  .tabel-testimoni thead tr {
+    background: rgb(245, 234, 22);
+    color: black;
     text-align: center;
-    margin-bottom: 30px;
+  }
+
+  #komentar {
+    width: 100%;
+  }
+
+  .box-testimoni .alert {
     position: relative;
-    bottom: 10px;
-    font-weight: bold;
-    font-size: 20px;
+    display: flex;
+    width: 700px;
+    margin-top: 5px;
   }
 
-  #tulis-testimoni label {
-    text-align: start;
-    font-size: 14px;
-    font-family: "work sans", sans-serif;
-    font-weight: 400;
-    left: 28px;
-  }
-
-  #tulis-testimoni input {
-    width: 80%;
-  }
-
-  #tulis-testimoni textarea {
-    width: 80%;
-  }
-
-  #nama-testimoni {
-    border: solid 0.1px rgb(214, 200, 200);
-    border-radius: 5px;
-    width: 60%;
-  }
-
-  #textarea-testimoni {
-    border: solid 0.1px rgb(214, 200, 200);
-    border-radius: 5px;
-    width: 60%;
-  }
-
-  #tulis-testimoni .alert {
-    width: 80%;
-  }
-
-  #tulis-testimoni .btn-kirim {
-    width: 50px;
-    left: 70%;
-  }
-
-  #tulis-testimoni .btn-loading {
-    width: 100px;
-    left: 51%;
-  }
   /* akhir testimoni-page.html */
 
   /* akhir testimoni  */
