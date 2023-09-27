@@ -1646,23 +1646,10 @@ tbody tr {
     padding: 5px;
   }
 
-  .tabel-testimoni thead tr {
-    background: rgb(245, 234, 22);
-    color: black;
-    text-align: center;
+  .container-testimoni .alert {
+    width: 300px;
+    font-size: 10px;
   }
-
-  #komentar {
-    width: 100%;
-  }
-
-  .box-testimoni .alert {
-    position: relative;
-    display: flex;
-    width: 700px;
-    margin-top: 5px;
-  }
-
   /* akhir testimoni-page.html */
 
   /* akhir testimoni  */
