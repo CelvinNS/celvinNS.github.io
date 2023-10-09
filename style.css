@@ -1348,7 +1348,7 @@ tbody tr {
 
   /* tentang */
   #tentang .container {
-    min-height: 90rem;
+    min-height: 90vh;
   }
 
   #tentang .visi,
