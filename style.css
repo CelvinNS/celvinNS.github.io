@@ -10,6 +10,8 @@ body {
 /* navbar */
 .navbar {
   background-color: white;
+  border-radius: 5px;
+  margin: 5px;
 }
 .navbar-brand img {
   width: 260px;
@@ -85,7 +87,7 @@ body {
   padding: 0px;
   font-size: 85px;
   font-weight: bold;
-  font-family: "Mitr", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 0;
   background: linear-gradient(to right, #2e35f6, #fc0303, #0634b3);
   background-clip: text;
@@ -1284,13 +1286,15 @@ tbody tr {
   /* jumbotron */
   .jumbotron {
     margin-top: 6rem;
-    padding-top: 6rem;
     min-height: 200px;
+    padding: 20px;
     color: white;
-    background: linear-gradient(45deg, #1746e4, #0088ff, rgb(255, 0, 0));
+    background-image: url("img/bg-jumbotron/bg1.jpg");
+    background-size: cover;
+    background-position: center center;
+    /* background: linear-gradient(45deg, #1746e4, #0088ff, rgb(255, 0, 0));
     animation: background-color 5s ease infinite;
-    background-size: 400% 400%;
-    color: rgb(0, 0, 0);
+    background-size: 400% 400%; */
   }
   @keyframes background-color {
     0% {
@@ -1304,33 +1308,24 @@ tbody tr {
     }
   }
   .jumbotron h2 {
-    font-size: 16px;
+    font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
-    margin-left: -10px;
+    font-weight: normal;
     color: white;
   }
   .jumbotron h1 {
-    padding: 0px;
-    width: 400px;
-    font-size: 32px;
-    font-family: "Mitr", sans-serif;
-    position: relative;
-    left: -13px;
-    background: linear-gradient(to right, #3300ff, #b6051d, #ff0000);
+    font-size: 45px;
+    line-height: 1;
+    font-weight: bold;
+    background: linear-gradient(to right, #ffffff, #0b0fde);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 0;
   }
 
   .jumbotron p {
-    width: 300px;
-    font-size: 9px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #c7c7c7;
-    font-weight: 300;
-    margin-left: -10px;
+    font-size: 10px;
+    width: 100%;
   }
   /* akhir jumbotron  */
 
