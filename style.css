@@ -838,7 +838,12 @@ tbody tr {
 /* galeri */
 #galeri {
   min-height: 220vh;
-  padding-top: 6rem;
+  margin-top: 15particlesJS("particles-js", {
+    "particles": {
+      // Tambahkan konfigurasi dari file JSON di sini
+    }
+  });
+  0px;
 }
 
 #galeri .container h2 {
@@ -1671,6 +1676,10 @@ tbody tr {
   /* kontak & footer*/
   #kontak {
     padding-top: 0px;
+  }
+
+  .form-label{
+    margin: 5px;
   }
 
   #kontak .kontak_pribadi {
