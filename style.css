@@ -120,6 +120,17 @@ body {
   font-weight: bold;
   font-family: "work sans", sans-serif;
   font-size: 24px;
+  display: flex;
+}
+
+.teks-berjalan h3{
+display: flex;
+position: relative;
+left: 40px;
+margin-right:10px;
+align-items: center;
+font-size: 30px;
+font-weight: bold;
 }
 /* akhir teks berjalan */
 
@@ -459,6 +470,7 @@ tbody tr {
 
 .jumbotron-kursus p {
   font-size: 22px;
+  width: 1000px;
 }
 
 .jumbotron-kursus-jumbotron {
@@ -781,7 +793,7 @@ tbody tr {
 .container-testimoni h3 {
   font-weight: 600;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .box-testimoni {
@@ -791,7 +803,7 @@ tbody tr {
   justify-content: center;
   width: 900px;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px rgb(45, 44, 44);
+  box-shadow: 0px 0px 4px rgb(105, 105, 106);
 }
 
 #input-nama {
@@ -837,13 +849,8 @@ tbody tr {
 
 /* galeri */
 #galeri {
-  min-height: 220vh;
-  margin-top: 15particlesJS("particles-js", {
-    "particles": {
-      // Tambahkan konfigurasi dari file JSON di sini
-    }
-  });
-  0px;
+  min-height: 100vh;
+  margin-top: 150px;
 }
 
 #galeri .container h2 {
@@ -1342,6 +1349,12 @@ tbody tr {
     font-size: 14px;
     padding: 8px;
   }
+
+  .teks-berjalan h3{
+    font-size: 16px;
+    margin-left: 10px;
+    left: 5px;
+  }
   /* akhir  teks berjalan */
 
   /* -------------------------------------------------------------- */
@@ -1569,11 +1582,10 @@ tbody tr {
 
   /* testimoni */
   #testimoni {
+    min-height: 75vh;
     margin: 5px;
-    color: black;
-    background: none;
-    border: none;
-    border-radius: 0;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
     box-shadow: none;
   }
 
@@ -1582,7 +1594,7 @@ tbody tr {
   }
 
   #testimoni .carousel-item h4 {
-    color: black;
+    /* color: black; */
     font-size: 10px;
     line-height: 1.375em;
     width: auto;
@@ -1593,7 +1605,7 @@ tbody tr {
   }
 
   #testimoni .container h2 {
-    color: black;
+    /* color: black; */
     font-size: 24px;
   }
 
@@ -1678,7 +1690,7 @@ tbody tr {
     padding-top: 0px;
   }
 
-  .form-label{
+  .form-label {
     margin: 5px;
   }
 
