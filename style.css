@@ -126,8 +126,8 @@ body {
 .teks-berjalan h3{
 display: flex;
 position: relative;
-left: 40px;
-margin-right:10px;
+left: 2%;
+margin-right:40px;
 align-items: center;
 font-size: 30px;
 font-weight: bold;
@@ -432,7 +432,8 @@ tbody tr {
 
 #kursus .btn-kursus-page:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 5px black;
+  color: white;
+  box-shadow: 0px 0px 9px rgb(50, 48, 48);
 }
 /* akhir btn kursus-page.html */
 
@@ -467,14 +468,14 @@ tbody tr {
   font-size: 70px;
   color: rgb(234, 255, 0);
 }
-
+  
 .jumbotron-kursus p {
   font-size: 22px;
   width: 1000px;
 }
 
 .jumbotron-kursus-jumbotron {
-  transition: all 5s ease-in-out;
+  transition: all 10s ease-in-out;
 }
 
 .btn-kursus-jumbotron:hover {
@@ -1147,6 +1148,7 @@ tbody tr {
   border-radius: 5px;
   color: white;
   box-shadow: 0 0 5px rgb(76, 69, 69);
+  transition: all 3ms ease-in-out;
 }
 
 .btn-galeri:hover {
@@ -1470,9 +1472,15 @@ tbody tr {
   }
 
   #kursus .btn-kursus-page {
+    /* position: relative;
+    left: 270px;
+    font-size: 12px; */
+
     position: relative;
-    left: 290px;
+    left: 260px;
     font-size: 12px;
+    padding: 5px;
+    top: 1rem;
   }
 
   .text-berjalan-kursus {
@@ -1582,7 +1590,7 @@ tbody tr {
 
   /* testimoni */
   #testimoni {
-    min-height: 75vh;
+    min-height: 70vh;
     margin: 5px;
     color: rgb(255, 255, 255);
     border-radius: 5px;
@@ -1623,7 +1631,7 @@ tbody tr {
   #testimoni .btn-testimoni {
     position: relative;
     left: 250px;
-    bottom: -70px;
+    bottom: -45px;
     font-size: 12px;
   }
 
