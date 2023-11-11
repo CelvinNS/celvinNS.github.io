@@ -182,8 +182,9 @@ font-weight: bold;
   left: calc(50% - 20px);
 }
 
-.tentang h3 {
-  font-weight: bold;
+#tentang h3 {
+  text-align: center;
+  margin-top: 50px;
 }
 /* motto */
 .motto {
@@ -257,6 +258,162 @@ font-weight: bold;
 
 /* akhir motto */
 
+/* profil pengajar */
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+.boxProfil{
+background-color: rgb(42, 41, 41);
+padding: 5px;
+margin: 5px;
+border-radius: 8px;
+margin-top: 200px;
+}
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+
+.wrapper .carouselProfil{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carouselProfil::-webkit-scrollbar {
+  display: none;
+}
+.carouselProfil.no-transition {
+  scroll-behavior: auto;
+}
+.carouselProfil.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carouselProfil.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carouselProfil :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carouselProfil .card {
+  scroll-snap-align: start;
+  height: 500px;
+  list-style: none;
+  background-image: url(img/profil-pengajar/backgroundCard.png);
+  background-size: cover;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carouselProfil .card .img {
+  background: #ffbd53;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carouselProfil .card h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+  color: rgb(78, 68, 68);
+
+}
+.carouselProfil .card span {
+  font-family: "Poppins", sans-serif;
+  color: orangered;
+  font-size: 1rem;
+  text-align: center;
+
+}
+.card .contact{
+  margin-top: 5px;
+}
+.card .contact a{
+  color: black;
+  padding: 5px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carouselProfil {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+  
+  .boxProfil{
+    margin-top: 100px;
+  }
+
+  .wrapper .carouselProfil .card{
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .boxProfil{
+    margin-top: 100px;
+  }
+  .wrapper h2{
+    font-size: 20px;
+  }
+
+  .wrapper .carouselProfil {
+    grid-auto-columns: 100%;
+  }
+
+  .wrapper .carouselProfil .card{
+    height: 400px;
+  }
+
+  .carouselProfil .card .img img{
+    width: 140px;
+    height: 140px;
+  }
+  
+  .carouselProfil .card h2{
+    margin-top: 4.5rem;
+    bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .carouselProfil .card span{
+    font-size: 16px;
+  }
+  .card .contact a{
+    font-size: 18px;
+  }
+  
+}
+/*akhir profil pengajar*/
 /* akhir tentang */
 
 /* --------------------------------------------------------- */
