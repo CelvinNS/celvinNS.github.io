@@ -39,7 +39,7 @@ next.addEventListener('click', ()=>{
 });
  
 let slideindex = 1;
-showslide(n);
+showslide();
  
 function plusslide(n){
     showslide(slideindex += n);
