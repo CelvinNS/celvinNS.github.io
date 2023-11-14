@@ -262,7 +262,7 @@ font-weight: bold;
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 .boxProfil{
-background-color: rgb(42, 41, 41);
+background-color: rgb(34, 33, 33);
 padding: 5px;
 margin: 5px;
 border-radius: 8px;
@@ -388,10 +388,12 @@ margin-top: 200px;
 
   .wrapper .carouselProfil {
     grid-auto-columns: 100%;
+    gap: 0px;
   }
 
   .wrapper .carouselProfil .card{
     height: 400px;
+    width: 300px;
   }
 
   .carouselProfil .card .img img{
